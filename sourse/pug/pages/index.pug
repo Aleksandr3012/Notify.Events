@@ -1,0 +1,90 @@
+extends layout/main.pug
+
+
+include ../blocks/sContent/_sContent.pug
+include ../blocks/sContact/_sContact.pug
+include ../blocks/sAdvantage/_sAdvantage.pug
+include ../blocks/sSources/_sSources.pug
+include ../blocks/sRecipients/_sRecipients.pug
+include ../blocks/sFilter/_sFilter.pug
+include ../blocks/sAdaptability/_sAdaptability.pug
+
+block variables
+	- let  mainPage= null
+block title
+	- let  title= 'Notify.Events'
+	title= title
+block pagecontent
+
+	+header()
+		+topLine() 
+		+headerBlock()
+	+sAdvantage({
+		numb: 'Преимущество №1',
+		title: 'Объединяйте',
+		text: 'Собирайте уведомления из&nbsp;разных сервисов в&nbsp;одном месте и&nbsp;группируйте их&nbsp;по&nbsp;назначению в&nbsp;&laquo;каналах&raquo;. Более 35&nbsp;источников так и&nbsp;ждут, когда вы&nbsp;их&nbsp;подключите.',
+		link: 'Но это только начало',
+		img: 'advandage-1'
+	})
+	+sAdvantage({
+		numb: 'Преимущество №2',
+		title: 'Настраивайте',
+		text: 'Действия и&nbsp;настройка отложенных сообщений по&nbsp;действию. Возможность отправки сообщений с&nbsp;задержкой.',
+		link: 'А что еще умеешь?',
+		img: 'advandage-2'
+	})
+	+sAdvantage({
+		numb: 'Преимущество №3',
+		title: 'Распределяйте',
+		text: 'Настраивайте уведомления между членами вашей команды по&nbsp;приоритетности, типам сообщений и&nbsp;рабочему времени.',
+		img: 'advandage-3'})
+		+e.devices 
+			.h5 Получайте уведомления куда угодно:
+			+e.devicesRow.row 
+				+e.col.col-auto.align-self-center
+					img.res-i(src=`img/svg/chrome.svg`, alt="", loading="lazy")
+					+e.name Браузеры
+				+e.col.col-auto.align-self-center
+					img.res-i(src=`img/svg/smartphone.svg`, alt="", loading="lazy")
+					+e.name Телефон
+				+e.col.col-auto.align-self-center
+					img.res-i(src=`img/svg/desktop.svg`, alt="", loading="lazy")
+					+e.name Компьютер
+				.col-auto
+					+e.notAll Это не всё!
+					+e.quantly 30+
+					+e.ways способов получения сообщений
+	+sAdvantage({
+		numb: 'Преимущество №4',
+		title: 'Выбирайте',
+		text: 'Позвольте каждому подписчику самостоятельно определять подходящий ему способ получения уведомлений. Более 30&nbsp;вариантов получения уведомлений и&nbsp;их&nbsp;количество постоянно растёт.',
+		link: 'Устаревшая система?',
+		img: 'advandage-4'
+	})
+	+sAdvantage({
+		numb: 'Преимущество №5',
+		title: 'Адаптируйте',
+		text: 'Расширьте возможности старых систем и&nbsp;скриптов, добавив поддержку мессенджеров, с&nbsp;помощью простой отправки e-mail&rsquo;а.',
+		link: 'А если у меня свой источник',
+		img: 'advandage-5'
+	})
+	+sAdvantage({
+		numb: 'Преимущество №6',
+		title: 'Контент и адаптивность',
+		text: 'Вы&nbsp;можете слать различный контент (текст, картинки, файлы), а&nbsp;так&nbsp;же вешать экшны.<br><br> А&nbsp;так&nbsp;же у&nbsp;нас можно создавать новые источники самостоятельно. При подключении нового источника, сообщения с&nbsp;него сразу&nbsp;же доступны для всех видов &laquo;получателей&raquo;.',
+		link: '',
+		img: 'advandage-6'
+	})
+	+sSources()
+	+sRecipients()
+	+sFilter()
+	+sAdaptability()
+
+
+
+	+sForm()
+	+sContact()
+	+footer()
+
+
+	

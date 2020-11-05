@@ -1,0 +1,78 @@
+mixin sSources(data)
+	// start sSources
+	+b.SECTION.sSources.section#sSources&attributes(attributes)
+		.container
+			+e.row.row.justify-content-between
+				.col-auto
+					+b.section-title
+						p Доступные
+						h2 Источники
+				.col-auto
+					+e.box
+						+e.imgWrap
+							img.res-i(src="img/svg/box.svg", alt="box" loading="lazy")
+						h6 Notify.Events предлагает интеграцию #[strong &laquo;из коробки&raquo;] с&nbsp;более чем #[strong 20&nbsp;источниками.]
+			+b.tabs
+				+e.caption
+					+e.btn.active
+						+icon('sourses-tab-1')
+						span Мониторинг сайтов
+					+e.btn
+						+icon('sourses-tab-2')
+						span Средства сборки проектов
+					+e.btn
+						+icon('sourses-tab-3')
+						span Средства контроля версий
+					+e.btn
+						+icon('sourses-tab-4')
+						span Средства мониторинга серверов
+					+e.btn
+						+icon('sourses-tab-5')
+						span Умные дома и&nbsp;IoT
+					+e.btn
+						+icon('sourses-tab-6')
+						span CMS системы
+					+e.btn
+						+icon('sourses-tab-7')
+						span Другое ПО
+				+e.wrap
+					mixin content
+						+e.content&attributes(attributes)
+							+e.row.row
+								mixin item(i,t)
+									+e.col.col-auto
+										+e.item
+											img.res-i(src=`img/svg/sourses-${i}.svg`, alt="" loading="lazy")
+											+e.text!= t
+								+item('1','Исходящий Webhook')
+								+item('2','Ryver')
+								+item('3','Pushbullet')
+								+item('4','Pushbullet')
+								+item('5','Discord')
+								+item('6','Flock')
+								+item('7','Atom RSS')
+								+item('8','Pushbullet')
+					+content().active
+					+content()
+					+content()
+					+content()
+					+content()
+					+content()
+					+content()
+			.row
+				.col-lg-6
+					+e.item
+						+e.iconWrap
+							+icon('sources-other-1')
+						+e.text
+							h4 Кастомизация источников
+							p Любой источник, представленный в&nbsp;сервисе, при необходимости, может быть изменен под ваши нужды (форматирование, локализация, своя логика обработки).
+				.col-lg-6
+					+e.item
+						+e.iconWrap
+							+icon('sources-other-2')
+						+e.text
+							h4 Создание своих источников
+							p Так&nbsp;же вы&nbsp;можете создать интеграцию с&nbsp;любым сервисом самостоятельно, принимая сообщения в&nbsp;виде входящего запроса или e-mail.
+
+	// end sSources

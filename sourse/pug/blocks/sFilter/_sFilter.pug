@@ -1,0 +1,63 @@
+mixin sFilter(data)
+	// start sFilter
+	+b.SECTION.sFilter.section#sFilter&attributes(attributes)
+		.container
+			.row
+				+e.txtCol.col-lg
+					+b.section-title
+						+e.subtitle Сообщения
+						h2 Фильтрация сообщений
+					p Всем сообщениям в&nbsp;Notify.Events, источник назначает приоритет и&nbsp;уровень. Вы&nbsp;можете использовать эти и другие свойства для фильтрации сообщений в свойствах каждой подписки.
+				.col-lg
+					+e.slider--js.swiper-container
+						.swiper-wrapper
+							+fliterSlide({
+								img: 'filterSlide-1',
+								method: 'Метод №1',
+								title: 'По приоритету',
+								text1: 'Приоритет определяет важность сообщения. Всего существует 5 значений: "Незначительный", "Низкий", "Средний", "Высокий" и "Критичный". ',
+								text2: 'Это свойство позволяет распределять сообщения, основываясь на их приоритете и отправлять их в удобном вам виде. ',
+								instance: '<strong>“Незначительные" сообщения отправлять в Telegram</strong>, а "критичные" - <strong>получать в виде звонка на телефон.</strong>'
+							})
+							+fliterSlide({
+								img: 'filterSlide-2',
+								method: 'Метод №2',
+								title: 'По уровням',
+								text1: 'Определяет "тип" сообщения. Всего существует 6 типов: "Подробный", "Информация", "Уведомление", "Предупреждение", "Ошибка" и "Успешно".',
+								text2: 'Уровни позволяют определять состояние источника, пославшего уведомление и направлять эти уведомления соответсовующим способом.',
+								instance: '"Подробное" сообщение с детальным логом сборки, отправлять на <strong>e-mail, а сообщение об ошибке - в Slack,</strong> для более быстрой рекции.'
+							})
+							+fliterSlide({
+								img: 'filterSlide-1',
+								method: 'Метод №3',
+								title: 'Ограничение по времени',
+								text1: 'В свойствах каждой подписки вы можете определить, в какое время и день недели она будет принимать уведомления.',
+								instance: 'Это позволяет организовать посменную работу (уведомляя сотрудников только в их смену) или реализовать различные способы уведомления в зависимости от времени суток: <strong>днем присылать сообщения в мессенджеры, а ночью - в виде звонка на телефон.</strong>'
+							})
+			+e.controll-panell
+				+e.slide-count-nums
+					+e.current-slide.current-slide-js 01
+					+e.dash-symb /
+					+e.max-slides 03
+				+e.arrow-cont
+					+e.pr-nt-parnter-sl.prev-sl-js
+						+e.arrow-icon-cont
+							+icon('slider-left')
+					+e.pr-nt-parnter-sl.next-sl-js
+						+e.arrow-icon-cont
+							+icon('slider-right')
+	// end sFilter
+
+mixin fliterSlide(data)
+	+b.fliterSlide.swiper-slide
+	
+		+e.imgWrap
+			img.swiper-lazy.res-i(src="#" data-src=`img/svg/${data.img}.svg` alt="")
+		+e.text
+			+e.method= data.method
+			+e.title= data.title
+			p!= data.text1
+			if data.text2
+				p!= data.text2
+			+e.subtitle Например:
+			p!= data.instance

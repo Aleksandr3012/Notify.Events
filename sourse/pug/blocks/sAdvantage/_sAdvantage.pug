@@ -1,0 +1,26 @@
+mixin sAdvantage(data)
+	// start sAdvantage
+	+b.SECTION.sAdvantage.section#sAdvantage&attributes(attributes)
+		.container
+			+e.row.row.align-items-center
+				+e.textCol.col-lg-6
+					+b.section-title
+						p!= data.numb
+						h2= data.title
+					h5!= data.text
+					.d-none.d-lg-block
+						if block
+							block
+						if data.link
+							+e.link(href="#")= data.link
+								+icon('chevron-right')
+				+e.picCol.col-lg-6
+					+e.imgWrap
+						img.res-i.loading-lazy(src=`img/svg/${data.img}.svg`, alt="", loading="lazy")
+			.d-lg-none
+				if block
+					block
+				if data.link
+					+e.link(href="#")= data.link
+						+icon('chevron-right')
+	// end sAdvantage

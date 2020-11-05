@@ -1,0 +1,21 @@
+$default-font: "Circe";
+// $file-form: ($file-formats: woff2 woff ttf);
+$addr: '../fonts/';
+$file-format: woff2 woff;
+
+@include font-face ($default-font, $addr + "Circe-Light/Circe-Light", 300, $file-formats: $file-format);
+@include font-face ($default-font, $addr + "Circe-Regular/Circe-Regular", $file-formats: $file-format);
+@include font-face ($default-font, $addr + "Circe-Bold/Circe-Bold", bold, $file-formats: $file-format);
+@include font-face ($default-font, $addr + "Circe-ExtraBold/Circe-ExtraBold", 800, $file-formats: $file-format);
+
+// font-weight helper:
+
+// 100 Thin
+// 200 Extra Light
+// 300 Light
+// 400 Normal
+// 500 Medium
+// 600 Semi Bold
+// 700 Bold
+// 800 Extra Bold
+// 900 Ultra Bold

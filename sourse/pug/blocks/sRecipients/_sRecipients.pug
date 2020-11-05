@@ -1,0 +1,44 @@
+mixin sRecipients(data)
+	// start sRecipients
+	+b.SECTION.sRecipients.section#sRecipients&attributes(attributes)
+		.container
+			+b.section-title
+				p Доступные
+				h2 Получатели
+				
+			+e.row.row
+				mixin item(i,t)
+					+e.col.col-auto
+						+e.item
+							img.res-i(src=`img/svg/recipient-${i}.svg`, alt= t loading="lazy")
+							span= t
+				+item('1','telegram')
+				+item('2','Skype')
+				+item('3','Slack')
+				+item('4','Viber')
+				+item('2','Skype')
+				+item('3','Slack')
+				+item('4','Viber')
+				+item('5','Facebook messenger')
+				+item('6','Vkontakte')
+				+item('8','android')
+				+item('9','Google chrome')
+				+item('1','telegram')
+				+item('2','Skype')
+				+item('3','Slack')
+			+e.form
+				+e.flyIcon.messenger
+					img(src=`img/flyIcon-1.png`, alt="" loading="lazy")
+				+e.flyIcon.microsoft-teams
+					img(src=`img/flyIcon-2.png`, alt="" loading="lazy")
+				+e.flyIcon.gmail
+					img(src=`img/flyIcon-3.png`, alt="" loading="lazy")
+				+e.flyIcon.gitter
+					img(src=`img/flyIcon-4.png`, alt="" loading="lazy")
+				.row.justify-content-between
+					.col-lg-6
+						h5 Хотите увидеть весь список получателей?
+						p В&nbsp;списке наших получателей приложения, которые есть почти в&nbsp;каждом смартфоне и&nbsp;компьютере. Мы&nbsp;уверены, что&nbsp;Вы найдете подходящие варианты и&nbsp;для себя!
+					.col-lg-auto
+						+e.btn(href="#") Показать весь список
+	// end sRecipients

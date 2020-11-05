@@ -1,0 +1,38 @@
+mixin topLine()
+	// start topLine
+	+b.topLine.section#topLine&attributes(attributes)
+		.container-fluid
+			.row.align-items-center.justify-content-between
+				.col-auto
+					+e.logo(href="/")
+						img.res-i(src="img/svg/logo.svg", alt="")
+				.col-auto
+					+b.langBlock
+						+e.item.drop-accardion-js
+							+e.iconWrap
+								img.res-i(src="img/svg/rus-flag.svg", alt="")
+							+e.lang РУС
+						+e.itemsHidden.drop-accardion-toggle-js
+							+e.item(href="#")
+								+e.iconWrap
+									img.res-i(src="img/svg/uk-flag.svg", alt="")
+								+e.lang EN
+							+e.item(href="#")
+								+e.iconWrap
+									img.res-i(src="img/svg/uk-flag.svg", alt="")
+								+e.lang FR
+				.col.col-xl-auto.d-none.d-lg-block
+					+mnu()
+				.col-auto.d-none.d-lg-block
+					+e.buttonsWrap
+						+e.btnReference(href="#")
+							+icon('reference')
+							|Справка
+						+e.btn(href="#")
+							+icon('lock')
+							|Вход/Регистрация
+
+				.col-auto.d-lg-none
+					+mob-mnu()
+
+	// end topLine

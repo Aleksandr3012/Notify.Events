@@ -1,0 +1,18 @@
+mixin headerBlock()
+	// start headerBlock
+	+b.headerBlock.section#headerBlock&attributes(attributes)
+		.container
+			.row
+				.col-lg-7
+					+b.section-title
+						h1 Собирайте уведомления из&nbsp;разных сервисов в одном месте
+					h6 Организуйте оперативные уведомления из&nbsp;различных источников во&nbsp;множество мессенджеров и&nbsp;других средств коммуникации
+					+e.btn(href="#") Попробуй бесплатно
+				.col-lg
+					+e.imgWrap
+						img.res-i(src="img/svg/header-img.svg", alt="")
+			+e.scrollBlock(href="#")
+				+e.circles
+				+icon('mouse')
+				
+	// end headerBlock

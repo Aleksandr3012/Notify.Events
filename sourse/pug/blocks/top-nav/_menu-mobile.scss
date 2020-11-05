@@ -1,0 +1,230 @@
+// мобильное меню
+
+// мобильное меню
+$h: 1px;
+
+.toggle-menu-mobile {
+	display: flex;
+	justify-content: flex-end;
+	height: 20px;
+	position: relative;
+	color: #ffffff;
+	font-size: 32px;
+	width: 32px;
+	@include media-breakpoint-up(sm) {
+		width: 100px;
+	}
+
+	&.on {
+		color: #ffffff;
+	}
+
+	span:after,
+	span:before {
+		content: "";
+		position: absolute;
+		left: 0;
+	}
+
+	span {
+		@include a-cent(y);
+	}
+
+	span:before {
+
+
+		top: 7px;
+	}
+
+	span:after {
+		bottom: 7px;
+	}
+
+	span { 
+		display: block;
+	}
+
+	span,
+	span:after,
+	span:before {
+		// width: 32px;
+		width: 1em;
+		height: $h;
+		background-color: currentColor;
+		transition: all 0.3s;
+		backface-visibility: hidden;
+		border-radius: 6px;
+	}
+
+	// &.on {
+	// 	// opacity: 0;
+	// }
+
+	&.on span {
+		background-color: transparent;
+	}
+
+	&.on span:after,
+	&.on span:before {
+
+		top: 0;
+		bottom: 0;
+		transform-origin: 50% 50%;
+	}
+
+	&.on span:before {
+		transform: rotate(45deg);
+	}
+
+	&.on span:after {
+		transform: rotate(-45deg);
+	}
+}
+
+.menu-mobile {
+	position: fixed !important;
+	z-index: -1;
+	width: 100vw;
+	height: calc(var(--vh, 1vh) * 100);
+	// width: 280px;
+	top: 0;
+	left: 0;
+	// right: 0;
+	transform: translateX(-100vh);
+	@include mt(.6);
+	will-change: transform;
+
+	&__inner {
+		background-color: $secondary;
+		padding: rem(20) 0;
+		padding-top: rem(75);
+		overflow-x: hidden;
+		overflow-y: auto;
+		-webkit-overflow-scrolling: touch;
+		height: 100%;
+	}
+
+	&.active {
+		transform: translate(0, 0);
+
+		.toggle-menu-mobile {
+			opacity: 1;
+		}
+	}
+
+	.toggle-menu-mobile {
+		// position: relative;
+		cursor: pointer;
+		margin-left: -15%;
+		position: absolute;
+		opacity: 0;
+		left: 0;
+		right: auto;
+		color: #FFF;
+		top: 10px;
+		z-index: 9999;
+		background-color: transparent;
+
+		span,
+		span:after,
+		span:before {
+			background-color: #FFF;
+		}
+
+		&.on {
+			opacity: 1;
+
+			span {
+				background-color: transparent;
+			}
+		}
+	}
+
+	ul {
+		position: relative;
+	}
+
+	li {
+		display: block;
+		margin: 0;
+		// border-top: 1px solid rgba(255, 255, 255, .13);
+
+		a {
+			// font-size: 16px;
+
+			padding: 10px;
+			display: block;
+
+		}
+	}
+
+	//Кнопки 
+	&__buttonsWrap {
+		display: inline-flex;
+		flex-direction: column;
+		width: 100%;
+		// text-align: center;
+	}
+
+	//справка
+	&__btnReference{
+		width: 280px;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		@extend .btn;
+		border: solid 1px #fff;
+		color: #fff !important;
+		@include mt;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		font-size: $small;
+		border-radius: $border-radius-sm;
+		margin-bottom: rem(15);
+		padding: rem(20) rem(5);
+
+
+		.icon {
+			margin-right: rem(8);
+			font-size: rem(16);
+			@include media-breakpoint-only(lg) {
+				font-size: rem(13);
+				margin-right: rem(5);
+			}
+		}
+
+		&:hover {
+			opacity: .7;
+		}
+	}
+
+	//вход
+	&__btn{
+		width: 280px;
+		margin-left: auto;
+		margin-right: auto;
+		@extend .btn;
+		padding: rem(20) rem(5);
+		background-color: #fff;
+		font-size: $small;
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: $border-radius-sm;
+		@include mt;
+
+		.icon {
+			font-size: rem(16);
+			margin-right: rem(9);
+			@include media-breakpoint-only(lg) {
+				font-size: rem(13);
+				margin-right: rem(6);
+			}
+		}
+
+		&:hover {
+			opacity: .7;
+		}
+	}
+}

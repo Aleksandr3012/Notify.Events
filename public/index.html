@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>Notify.Events</title>
+		<meta name="description" content="о чем страница">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, shrink-to-fit=no">
+		<meta name="viewport" content="width=device-width, shrink-to-fit=no">
+		<link rel="shortcut icon" type="image/png" href="img/favicon/favicon.png"><meta name="format-detection" content="telephone=no">
+		<link rel="image_src" href="http://genrif.ru/assets/i/soc-logo.png">
+		<meta property="og:type" content="website">
+		<meta property="og:site_name" content="content">
+		<meta property="og:title" content="content">
+		<meta property="og:description" content="content">
+		<meta property="og:url" content="content">
+		<meta property="og:locale" content="ru_RU">
+		<meta property="og:image" content="path/to/image.jpg">
+		<meta property="og:image:width" content="968">
+		<meta property="og:image:height" content="504">
+		<!-- Custom Browsers Color-->
+		<meta name="theme-color" content="#3361d8">
+		<link rel="stylesheet" href="libs/swiper/css/swiper.min.css"/>
+		<link rel="stylesheet" href="libs/@fancyapps/fancybox/jquery.fancybox.min.css"/>
+		<link rel="stylesheet" href="css/main.min.css"/>
+	</head>
+	<body> 
+		<!-- start header-->
+		<header class="header" id="header">
+			<!-- start topLine-->
+			<div class="topLine section" id="topLine">
+				<div class="container-fluid">
+					<div class="row align-items-center justify-content-between">
+						<div class="col-auto"><a class="topLine__logo" href="/"><img class="res-i" src="img/svg/logo.svg" alt=""/></a>
+						</div>
+						<div class="col-auto">
+							<div class="langBlock">
+								<div class="langBlock__item drop-accardion-js">
+									<div class="langBlock__iconWrap"><img class="res-i" src="img/svg/rus-flag.svg" alt=""/>
+									</div>
+									<div class="langBlock__lang">РУС
+									</div>
+								</div>
+								<div class="langBlock__itemsHidden drop-accardion-toggle-js"><a class="langBlock__item" href="#"><span class="langBlock__iconWrap"><img class="res-i" src="img/svg/uk-flag.svg" alt=""/></span><span class="langBlock__lang">EN</span></a><a class="langBlock__item" href="#"><span class="langBlock__iconWrap"><img class="res-i" src="img/svg/uk-flag.svg" alt=""/></span><span class="langBlock__lang">FR</span></a>
+								</div>
+							</div>
+						</div>
+						<div class="col col-xl-auto d-none d-lg-block">
+							<ul class="navMenu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+								<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#sContact" itemprop="url">Как это работает?</a>
+								</li>
+								<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Источники  </a>
+								</li>
+								<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Получатели </a>
+								</li>
+								<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Возможности </a>
+								</li>
+								<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Тарифы</a>
+								</li>
+								<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Контакты</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-auto d-none d-lg-block">
+							<div class="topLine__buttonsWrap"><a class="topLine__btnReference" href="#">
+								<svg class="icon icon-reference ">
+									<use xlink:href="img/svg/sprite.svg#reference"></use>
+								</svg>Справка</a><a class="topLine__btn" href="#">
+								<svg class="icon icon-lock ">
+									<use xlink:href="img/svg/sprite.svg#lock"></use>
+								</svg>Вход/Регистрация</a>
+							</div>
+						</div>
+						<div class="col-auto d-lg-none">
+							<div class="toggle-menu-mobile toggle-menu-mobile--js d-lg-none"><span></span>
+							</div>
+							<div class="menu-mobile menu-mobile--js d-lg-none">
+								<div class="menu-mobile__inner">
+									<ul class="navMenu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+										<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#sContact" itemprop="url">Как это работает?</a>
+										</li>
+										<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Источники  </a>
+										</li>
+										<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Получатели </a>
+										</li>
+										<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Возможности </a>
+										</li>
+										<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Тарифы</a>
+										</li>
+										<li class="navMenu__item" itemprop="item"><a class="navMenu__link" href="#" itemprop="url">Контакты</a>
+										</li>
+									</ul>
+									<div class="menu-mobile__buttonsWrap"><a class="menu-mobile__btnReference" href="#">
+										<svg class="icon icon-reference ">
+											<use xlink:href="img/svg/sprite.svg#reference"></use>
+										</svg>Справка</a><a class="menu-mobile__btn" href="#">
+										<svg class="icon icon-lock ">
+											<use xlink:href="img/svg/sprite.svg#lock"></use>
+										</svg>Вход/Регистрация</a>
+									</div>
+								</div>
+							</div>
+							<!--  мобильное меню-->
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end topLine-->
+			<!-- start headerBlock-->
+			<div class="headerBlock section" id="headerBlock">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-7">
+							<div class="section-title">
+								<h1>Собирайте уведомления из&nbsp;разных сервисов в одном месте</h1>
+							</div>
+							<h6>Организуйте оперативные уведомления из&nbsp;различных источников во&nbsp;множество мессенджеров и&nbsp;других средств коммуникации</h6><a class="headerBlock__btn" href="#">Попробуй бесплатно</a>
+						</div>
+						<div class="col-lg">
+							<div class="headerBlock__imgWrap"><img class="res-i" src="img/svg/header-img.svg" alt=""/>
+							</div>
+						</div>
+					</div><a class="headerBlock__scrollBlock" href="#"><span class="headerBlock__circles"></span>
+					<svg class="icon icon-mouse ">
+						<use xlink:href="img/svg/sprite.svg#mouse"></use>
+					</svg></a>
+				</div>
+			</div>
+			<!-- end headerBlock-->
+		</header>
+		<!-- end header-->
+		<!-- start sAdvantage-->
+		<section class="sAdvantage section" id="sAdvantage">
+			<div class="container">
+				<div class="sAdvantage__row row align-items-center">
+					<div class="sAdvantage__textCol col-lg-6">
+						<div class="section-title">
+							<p>Преимущество №1</p>
+							<h2>Объединяйте</h2>
+						</div>
+						<h5>Собирайте уведомления из&nbsp;разных сервисов в&nbsp;одном месте и&nbsp;группируйте их&nbsp;по&nbsp;назначению в&nbsp;&laquo;каналах&raquo;. Более 35&nbsp;источников так и&nbsp;ждут, когда вы&nbsp;их&nbsp;подключите.</h5>
+						<div class="d-none d-lg-block"><a class="sAdvantage__link" href="#">Но это только начало
+							<svg class="icon icon-chevron-right ">
+								<use xlink:href="img/svg/sprite.svg#chevron-right"></use>
+							</svg></a>
+						</div>
+					</div>
+					<div class="sAdvantage__picCol col-lg-6">
+						<div class="sAdvantage__imgWrap"><img class="res-i loading-lazy" src="img/svg/advandage-1.svg" alt="" loading="lazy"/>
+						</div>
+					</div>
+				</div>
+				<div class="d-lg-none"><a class="sAdvantage__link" href="#">Но это только начало
+					<svg class="icon icon-chevron-right ">
+						<use xlink:href="img/svg/sprite.svg#chevron-right"></use>
+					</svg></a>
+				</div>
+			</div>
+		</section>
+		<!-- end sAdvantage-->
+		<!-- start sAdvantage-->
+		<section class="sAdvantage section" id="sAdvantage">
+			<div class="container">
+				<div class="sAdvantage__row row align-items-center">
+					<div class="sAdvantage__textCol col-lg-6">
+						<div class="section-title">
+							<p>Преимущество №2</p>
+							<h2>Настраивайте</h2>
+						</div>
+						<h5>Действия и&nbsp;настройка отложенных сообщений по&nbsp;действию. Возможность отправки сообщений с&nbsp;задержкой.</h5>
+						<div class="d-none d-lg-block"><a class="sAdvantage__link" href="#">А что еще умеешь?
+							<svg class="icon icon-chevron-right ">
+								<use xlink:href="img/svg/sprite.svg#chevron-right"></use>
+							</svg></a>
+						</div>
+					</div>
+					<div class="sAdvantage__picCol col-lg-6">
+						<div class="sAdvantage__imgWrap"><img class="res-i loading-lazy" src="img/svg/advandage-2.svg" alt="" loading="lazy"/>
+						</div>
+					</div>
+				</div>
+				<div class="d-lg-none"><a class="sAdvantage__link" href="#">А что еще умеешь?
+					<svg class="icon icon-chevron-right ">
+						<use xlink:href="img/svg/sprite.svg#chevron-right"></use>
+					</svg></a>
+				</div>
+			</div>
+		</section>
+		<!-- end sAdvantage-->
+		<!-- start sAdvantage-->
+		<section class="sAdvantage section" id="sAdvantage">
+			<div class="container">
+				<div class="sAdvantage__row row align-items-center">
+					<div class="sAdvantage__textCol col-lg-6">
+						<div class="section-title">
+							<p>Преимущество №3</p>
+							<h2>Распределяйте</h2>
+						</div>
+						<h5>Настраивайте уведомления между членами вашей команды по&nbsp;приоритетности, типам сообщений и&nbsp;рабочему времени.</h5>
+						<div class="d-none d-lg-block">
+							<div class="sAdvantage__devices"> 
+								<div class="h5">Получайте уведомления куда угодно:</div>
+								<div class="sAdvantage__devicesRow row"> 
+									<div class="sAdvantage__col col-auto align-self-center"><img class="res-i" src="img/svg/chrome.svg" alt="" loading="lazy">
+										<div class="sAdvantage__name">Браузеры
+										</div>
+									</div>
+									<div class="sAdvantage__col col-auto align-self-center"><img class="res-i" src="img/svg/smartphone.svg" alt="" loading="lazy">
+										<div class="sAdvantage__name">Телефон
+										</div>
+									</div>
+									<div class="sAdvantage__col col-auto align-self-center"><img class="res-i" src="img/svg/desktop.svg" alt="" loading="lazy">
+										<div class="sAdvantage__name">Компьютер
+										</div>
+									</div>
+									<div class="col-auto">
+										<div class="sAdvantage__notAll">Это не всё!
+										</div>
+										<div class="sAdvantage__quantly">30+
+										</div>
+										<div class="sAdvantage__ways">способов получения сообщений
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="sAdvantage__picCol col-lg-6">
+						<div class="sAdvantage__imgWrap"><img class="res-i loading-lazy" src="img/svg/advandage-3.svg" alt="" loading="lazy"/>
+						</div>
+					</div>
+				</div>
+				<div class="d-lg-none">
+					<div class="sAdvantage__devices"> 
+						<div class="h5">Получайте уведомления куда угодно:</div>
+						<div class="sAdvantage__devicesRow row"> 
+							<div class="sAdvantage__col col-auto align-self-center"><img class="res-i" src="img/svg/chrome.svg" alt="" loading="lazy">
+								<div class="sAdvantage__name">Браузеры
+								</div>
+							</div>
+							<div class="sAdvantage__col col-auto align-self-center"><img class="res-i" src="img/svg/smartphone.svg" alt="" loading="lazy">
+								<div class="sAdvantage__name">Телефон
+								</div>
+							</div>
+							<div class="sAdvantage__col col-auto align-self-center"><img class="res-i" src="img/svg/desktop.svg" alt="" loading="lazy">
+								<div class="sAdvantage__name">Компьютер
+								</div>
+							</div>
+							<div class="col-auto">
+								<div class="sAdvantage__notAll">Это не всё!
+								</div>
+								<div class="sAdvantage__quantly">30+
+								</div>
+								<div class="sAdvantage__ways">способов получения сообщений
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- end sAdvantage-->
+		<!-- start sAdvantage-->
+		<section class="sAdvantage section" id="sAdvantage">
+			<div class="container">
+				<div class="sAdvantage__row row align-items-center">
+					<div class="sAdvantage__textCol col-lg-6">
+						<div class="section-title">
+							<p>Преимущество №4</p>
+							<h2>Выбирайте</h2>
+						</div>
+						<h5>Позвольте каждому подписчику самостоятельно определять подходящий ему способ получения уведомлений. Более 30&nbsp;вариантов получения уведомлений и&nbsp;их&nbsp;количество постоянно растёт.</h5>
+						<div class="d-none d-lg-block"><a class="sAdvantage__link" href="#">Устаревшая система?
+							<svg class="icon icon-chevron-right ">
+								<use xlink:href="img/svg/sprite.svg#chevron-right"></use>
+							</svg></a>
+						</div>
+					</div>
+					<div class="sAdvantage__picCol col-lg-6">
+						<div class="sAdvantage__imgWrap"><img class="res-i loading-lazy" src="img/svg/advandage-4.svg" alt="" loading="lazy"/>
+						</div>
+					</div>
+				</div>
+				<div class="d-lg-none"><a class="sAdvantage__link" href="#">Устаревшая система?
+					<svg class="icon icon-chevron-right ">
+						<use xlink:href="img/svg/sprite.svg#chevron-right"></use>
+					</svg></a>
+				</div>
+			</div>
+		</section>
+		<!-- end sAdvantage-->
+		<!-- start sAdvantage-->
+		<section class="sAdvantage section" id="sAdvantage">
+			<div class="container">
+				<div class="sAdvantage__row row align-items-center">
+					<div class="sAdvantage__textCol col-lg-6">
+						<div class="section-title">
+							<p>Преимущество №5</p>
+							<h2>Адаптируйте</h2>
+						</div>
+						<h5>Расширьте возможности старых систем и&nbsp;скриптов, добавив поддержку мессенджеров, с&nbsp;помощью простой отправки e-mail&rsquo;а.</h5>
+						<div class="d-none d-lg-block"><a class="sAdvantage__link" href="#">А если у меня свой источник
+							<svg class="icon icon-chevron-right ">
+								<use xlink:href="img/svg/sprite.svg#chevron-right"></use>
+							</svg></a>
+						</div>
+					</div>
+					<div class="sAdvantage__picCol col-lg-6">
+						<div class="sAdvantage__imgWrap"><img class="res-i loading-lazy" src="img/svg/advandage-5.svg" alt="" loading="lazy"/>
+						</div>
+					</div>
+				</div>
+				<div class="d-lg-none"><a class="sAdvantage__link" href="#">А если у меня свой источник
+					<svg class="icon icon-chevron-right ">
+						<use xlink:href="img/svg/sprite.svg#chevron-right"></use>
+					</svg></a>
+				</div>
+			</div>
+		</section>
+		<!-- end sAdvantage-->
+		<!-- start sAdvantage-->
+		<section class="sAdvantage section" id="sAdvantage">
+			<div class="container">
+				<div class="sAdvantage__row row align-items-center">
+					<div class="sAdvantage__textCol col-lg-6">
+						<div class="section-title">
+							<p>Преимущество №6</p>
+							<h2>Контент и адаптивность</h2>
+						</div>
+						<h5>Вы&nbsp;можете слать различный контент (текст, картинки, файлы), а&nbsp;так&nbsp;же вешать экшны.<br><br> А&nbsp;так&nbsp;же у&nbsp;нас можно создавать новые источники самостоятельно. При подключении нового источника, сообщения с&nbsp;него сразу&nbsp;же доступны для всех видов &laquo;получателей&raquo;.</h5>
+						<div class="d-none d-lg-block">
+						</div>
+					</div>
+					<div class="sAdvantage__picCol col-lg-6">
+						<div class="sAdvantage__imgWrap"><img class="res-i loading-lazy" src="img/svg/advandage-6.svg" alt="" loading="lazy"/>
+						</div>
+					</div>
+				</div>
+				<div class="d-lg-none">
+				</div>
+			</div>
+		</section>
+		<!-- end sAdvantage-->
+		<!-- start sSources-->
+		<section class="sSources section" id="sSources">
+			<div class="container">
+				<div class="sSources__row row justify-content-between">
+					<div class="col-auto">
+						<div class="section-title">
+							<p>Доступные</p>
+							<h2>Источники</h2>
+						</div>
+					</div>
+					<div class="col-auto">
+						<div class="sSources__box">
+							<div class="sSources__imgWrap"><img class="res-i" src="img/svg/box.svg" alt="box" loading="lazy"/>
+							</div>
+							<h6>Notify.Events предлагает интеграцию <strong>&laquo;из коробки&raquo;</strong> с&nbsp;более чем <strong>20&nbsp;источниками.</strong></h6>
+						</div>
+					</div>
+				</div>
+				<div class="tabs">
+					<div class="tabs__caption">
+						<div class="tabs__btn active">
+							<svg class="icon icon-sourses-tab-1 ">
+								<use xlink:href="img/svg/sprite.svg#sourses-tab-1"></use>
+							</svg><span>Мониторинг сайтов</span>
+						</div>
+						<div class="tabs__btn">
+							<svg class="icon icon-sourses-tab-2 ">
+								<use xlink:href="img/svg/sprite.svg#sourses-tab-2"></use>
+							</svg><span>Средства сборки проектов</span>
+						</div>
+						<div class="tabs__btn">
+							<svg class="icon icon-sourses-tab-3 ">
+								<use xlink:href="img/svg/sprite.svg#sourses-tab-3"></use>
+							</svg><span>Средства контроля версий</span>
+						</div>
+						<div class="tabs__btn">
+							<svg class="icon icon-sourses-tab-4 ">
+								<use xlink:href="img/svg/sprite.svg#sourses-tab-4"></use>
+							</svg><span>Средства мониторинга серверов</span>
+						</div>
+						<div class="tabs__btn">
+							<svg class="icon icon-sourses-tab-5 ">
+								<use xlink:href="img/svg/sprite.svg#sourses-tab-5"></use>
+							</svg><span>Умные дома и&nbsp;IoT</span>
+						</div>
+						<div class="tabs__btn">
+							<svg class="icon icon-sourses-tab-6 ">
+								<use xlink:href="img/svg/sprite.svg#sourses-tab-6"></use>
+							</svg><span>CMS системы</span>
+						</div>
+						<div class="tabs__btn">
+							<svg class="icon icon-sourses-tab-7 ">
+								<use xlink:href="img/svg/sprite.svg#sourses-tab-7"></use>
+							</svg><span>Другое ПО</span>
+						</div>
+					</div>
+					<div class="tabs__wrap">
+						<div class="tabs__content active">
+							<div class="tabs__row row">
+								<div class="tabs__col col-auto">
+									<div class="tabs__item"><img class="res-i" src="img/svg/sourses-1.svg" alt="" loading="lazy"/>
+										<div class="tabs__text">Исходящий Webhook
+										</div>
+									</div>
+								</div>
+								<div class="tabs__col col-auto">
+									<div class="tabs__item"><img class="res-i" src="img/svg/sourses-2.svg" alt="" loading="lazy"/>
+										<div class="tabs__text">Ryver
+										</div>
+									</div>
+								</div>
+								<div class="tabs__col col-auto">
+									<div class="tabs__item"><img class="res-i" src="img/svg/sourses-3.svg" alt="" loading="lazy"/>
+										<div class="tabs__text">Pushbullet
+										</div>
+									</div>
+								</div>
+								<div class="tabs__col col-auto">
+									<div class="tabs__item"><img class="res-i" src="img/svg/sourses-4.svg" alt="" loading="lazy"/>
+										<div class="tabs__text">Pushbullet
+										</div>
+									</div>
+								</div>
+								<div class="tabs__col col-auto">
+									<div class="tabs__item"><img class="res-i" src="img/svg/sourses-5.svg" alt="" loading="lazy"/>
+										<div class="tabs__text">Discord
+										</div>
+									</div>
+								</div>
+								<div class="tabs__col col-auto">
+									<div class="tabs__item"><img class="res-i" src="img/svg/sourses-6.svg" alt="" loading="lazy"/>
+										<div class="tabs__text">Flock
+										</div>
+									</div>
+								</div>
+								<div class="tabs__col col-auto">
+									<div class="tabs__item"><img class="res-i" src="img/svg/sourses-7.svg" alt="" loading="lazy"/>
+										<div class="tabs__text">Atom RSS
+										</div>
+									</div>
+								</div>
+								<div class="tabs__col col-auto">
+									<div class="tabs__item"><img class="res-i" src="img/svg/sourses-8.svg" alt="" loading="lazy"/>
+										<div class="tabs__text">Pushbullet
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tabs__content">
+							<div class="tabs__row row">
+								<div class="tabs__col col-auto">
+									<div class="tabs__item"><img class="res-i" src="img/svg/sourses-1.svg" alt="" loading="lazy"/>
+										<div class="tabs__text">Исходящий Webhook
+										</div>
+									</div>
+								</div>
+								<div class="tabs__col col-auto">
+									<div class="tabs__item"><img class="res-i" src="img/svg/sourses-2.svg" alt="" loading="lazy"/>
+										<div class="tabs__text">Ryver
+										</div>
+									</div>
+								</div>
+								<div class="tabs__col col-auto">
+									<div class="tabs__item"><img class="res-i" src="img/svg/sourses-3.svg" alt="" loading="lazy"/>
+										<div class="tabs__text">Pushbullet
+										</div>
+									</div>
+								</div>
+								<div class="tabs__col col-auto">
+									<div class="tabs__item"><img class="res-i" src="img/svg/sourses-4.svg" alt="" loading="lazy"/>
+										<div class="tabs__text">Pushbullet
+										</div>
+									</div>
+								</div>
+								<div class="tabs__col col-auto">
+									<div class="tabs__item"><img class="res-i" src="img/svg/sourses-5.svg" alt="" loading="lazy"/>
+										<div class="tabs__text">Discord
+										</div>
+									</div>
+								</div>
+								<div class="tabs__col col-auto">
+									<div class="tabs__item"><img class="res-i" src="img/svg/sourses-6.svg" alt="" loading="lazy"/>
+										<div class="tabs__text">Flock
+										</div>
+									</div>
+								</div>
+								<div class="tabs__col col-auto">
+									<div class="tabs__item"><img class="res-i" src="img/svg/sourses-7.svg" alt="" loading="lazy"/>
+										<div class="tabs__text">Atom RSS
+										</div>
+									</div>
+								</div>
+								<div class="tabs__col col-auto">
+									<div class="tabs__item"><img class="res-i" src="img/svg/sourses-8.svg" alt="" loading="lazy"/>
+										<div class="tabs__text">Pushbullet
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tabs__content">
+							<div class="tabs__row row">
+								<div class="tabs__col col-auto">
+									<div class="tabs__item"><img class="res-i" src="img/svg/sourses-1.svg" alt="" loading="lazy"/>
+										<div class="tabs__text">Исходящий Webhook
+										</div>
+									</div>
+								</div>
+								<div class="tabs__col col-auto">
+									<div class="tabs__item"><img class="res-i" src="img/svg/sourses-2.svg" alt="" loading="lazy"/>
+										<div class="tabs__text">Ryver
+										</div>
+									</div>
+								</div>
+								<div class="tabs__col col-auto">
+									<div class="tabs__item"><img class="res-i" src="img/svg/sourses-3.svg" alt="" loading="lazy"/>
+										<div class="tabs__text">Pushbullet
+										</div>
+									</div>
+								</div>
+								<div class="tabs__col col-auto">
+									<div class="tabs__item"><img class="res-i" src="img/svg/sourses-4.svg" alt="" loading="lazy"/>
+										<div class="tabs__text">Pushbullet
+										</div>
+									</div>
+								</div>
+								<div class="tabs__col col-auto">
+									<div class="tabs__item"><img class="res-i" src="img/svg/sourses-5.svg" alt="" loading="lazy"/>
+										<div class="tabs__text">Discord
+										</div>
+									</div>
+								</div>
+								<div class="tabs__col col-auto">
+									<div class="tabs__item"><img class="res-i" src="img/svg/sourses-6.svg" alt="" loading="lazy"/>
+										<div class="tabs__text">Flock
+										</div>
+									</div>
+								</div>
+								<div class="tabs__col col-auto">
+									<div class="tabs__item"><img class="res-i" src="img/svg/sourses-7.svg" alt="" loading="lazy"/>
+										<div class="tabs__text">Atom RSS
+										</div>
+									</div>
+								</div>
+								<div class="tabs__col col-auto">
+									<div class="tabs__item"><img class="res-i" src="img/svg/sourses-8.svg" alt="" loading="lazy"/>
+										<div class="tabs__text">Pushbullet
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tabs__content">
+							<div class="tabs__row row">
+								<div class="tabs__col col-auto">
+									<div class="tabs__item"><img class="res-i" src="img/svg/sourses-1.svg" alt="" loading="lazy"/>
+										<div class="tabs__text">Исходящий Webhook
+										</div>
+									</div>
+								</div>
+								<div class="tabs__col col-auto">
+									<div class="tabs__item"><img class="res-i" src="img/svg/sourses-2.svg" alt="" loading="lazy"/>
+										<div class="tabs__text">Ryver
+										</div>
+									</div>
+								</div>
+								<div class="tabs__col col-auto">
+									<div class="tabs__item"><img class="res-i" src="img/svg/sourses-3.svg" alt="" loading="lazy"/>
+										<div class="tabs__text">Pushbullet
+										</div>
+									</div>
+								</div>
+								<div class="tabs__col col-auto">
+									<div class="tabs__item"><img class="res-i" src="img/svg/sourses-4.svg" alt="" loading="lazy"/>
+										<div class="tabs__text">Pushbullet
+										</div>
+									</div>
+								</div>
+								<div class="tabs__col col-auto">
+									<div class="tabs__item"><img class="res-i" src="img/svg/sourses-5.svg" alt="" loading="lazy"/>
+										<div class="tabs__text">Discord
+										</div>
+									</div>
+								</div>
+								<div class="tabs__col col-auto">
+									<div class="tabs__item"><img class="res-i" src="img/svg/sourses-6.svg" alt="" loading="lazy"/>
+										<div class="tabs__text">Flock
+										</div>
+									</div>
+								</div>
+								<div class="tabs__col col-auto">
+									<div class="tabs__item"><img class="res-i" src="img/svg/sourses-7.svg" alt="" loading="lazy"/>
+										<div class="tabs__text">Atom RSS
+										</div>
+									</div>
+								</div>
+								<div class="tabs__col col-auto">
+									<div class="tabs__item"><img class="res-i" src="img/svg/sourses-8.svg" alt="" loading="lazy"/>
+										<div class="tabs__text">Pushbullet
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tabs__content">
+							<div class="tabs__row row">
+								<div class="tabs__col col-auto">
+									<div class="tabs__item"><img class="res-i" src="img/svg/sourses-1.svg" alt="" loading="lazy"/>
+										<div class="tabs__text">Исходящий Webhook
+										</div>
+									</div>
+								</div>
+								<div class="tabs__col col-auto">
+									<div class="tabs__item"><img class="res-i" src="img/svg/sourses-2.svg" alt="" loading="lazy"/>
+										<div class="tabs__text">Ryver
+										</div>
+									</div>
+								</div>
+								<div class="tabs__col col-auto">
+									<div class="tabs__item"><img class="res-i" src="img/svg/sourses-3.svg" alt="" loading="lazy"/>
+										<div class="tabs__text">Pushbullet
+										</div>
+									</div>
+								</div>
+								<div class="tabs__col col-auto">
+									<div class="tabs__item"><img class="res-i" src="img/svg/sourses-4.svg" alt="" loading="lazy"/>
+										<div class="tabs__text">Pushbullet
+										</div>
+									</div>
+								</div>
+								<div class="tabs__col col-auto">
+									<div class="tabs__item"><img class="res-i" src="img/svg/sourses-5.svg" alt="" loading="lazy"/>
+										<div class="tabs__text">Discord
+										</div>
+									</div>
+								</div>
+								<div class="tabs__col col-auto">
+									<div class="tabs__item"><img class="res-i" src="img/svg/sourses-6.svg" alt="" loading="lazy"/>
+										<div class="tabs__text">Flock
+										</div>
+									</div>
+								</div>
+								<div class="tabs__col col-auto">
+									<div class="tabs__item"><img class="res-i" src="img/svg/sourses-7.svg" alt="" loading="lazy"/>
+										<div class="tabs__text">Atom RSS
+										</div>
+									</div>
+								</div>
+								<div class="tabs__col col-auto">
+									<div class="tabs__item"><img class="res-i" src="img/svg/sourses-8.svg" alt="" loading="lazy"/>
+										<div class="tabs__text">Pushbullet
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tabs__content">
+							<div class="tabs__row row">
+								<div class="tabs__col col-auto">
+									<div class="tabs__item"><img class="res-i" src="img/svg/sourses-1.svg" alt="" loading="lazy"/>
+										<div class="tabs__text">Исходящий Webhook
+										</div>
+									</div>
+								</div>
+								<div class="tabs__col col-auto">
+									<div class="tabs__item"><img class="res-i" src="img/svg/sourses-2.svg" alt="" loading="lazy"/>
+										<div class="tabs__text">Ryver
+										</div>
+									</div>
+								</div>
+								<div class="tabs__col col-auto">
+									<div class="tabs__item"><img class="res-i" src="img/svg/sourses-3.svg" alt="" loading="lazy"/>
+										<div class="tabs__text">Pushbullet
+										</div>
+									</div>
+								</div>
+								<div class="tabs__col col-auto">
+									<div class="tabs__item"><img class="res-i" src="img/svg/sourses-4.svg" alt="" loading="lazy"/>
+										<div class="tabs__text">Pushbullet
+										</div>
+									</div>
+								</div>
+								<div class="tabs__col col-auto">
+									<div class="tabs__item"><img class="res-i" src="img/svg/sourses-5.svg" alt="" loading="lazy"/>
+										<div class="tabs__text">Discord
+										</div>
+									</div>
+								</div>
+								<div class="tabs__col col-auto">
+									<div class="tabs__item"><img class="res-i" src="img/svg/sourses-6.svg" alt="" loading="lazy"/>
+										<div class="tabs__text">Flock
+										</div>
+									</div>
+								</div>
+								<div class="tabs__col col-auto">
+									<div class="tabs__item"><img class="res-i" src="img/svg/sourses-7.svg" alt="" loading="lazy"/>
+										<div class="tabs__text">Atom RSS
+										</div>
+									</div>
+								</div>
+								<div class="tabs__col col-auto">
+									<div class="tabs__item"><img class="res-i" src="img/svg/sourses-8.svg" alt="" loading="lazy"/>
+										<div class="tabs__text">Pushbullet
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tabs__content">
+							<div class="tabs__row row">
+								<div class="tabs__col col-auto">
+									<div class="tabs__item"><img class="res-i" src="img/svg/sourses-1.svg" alt="" loading="lazy"/>
+										<div class="tabs__text">Исходящий Webhook
+										</div>
+									</div>
+								</div>
+								<div class="tabs__col col-auto">
+									<div class="tabs__item"><img class="res-i" src="img/svg/sourses-2.svg" alt="" loading="lazy"/>
+										<div class="tabs__text">Ryver
+										</div>
+									</div>
+								</div>
+								<div class="tabs__col col-auto">
+									<div class="tabs__item"><img class="res-i" src="img/svg/sourses-3.svg" alt="" loading="lazy"/>
+										<div class="tabs__text">Pushbullet
+										</div>
+									</div>
+								</div>
+								<div class="tabs__col col-auto">
+									<div class="tabs__item"><img class="res-i" src="img/svg/sourses-4.svg" alt="" loading="lazy"/>
+										<div class="tabs__text">Pushbullet
+										</div>
+									</div>
+								</div>
+								<div class="tabs__col col-auto">
+									<div class="tabs__item"><img class="res-i" src="img/svg/sourses-5.svg" alt="" loading="lazy"/>
+										<div class="tabs__text">Discord
+										</div>
+									</div>
+								</div>
+								<div class="tabs__col col-auto">
+									<div class="tabs__item"><img class="res-i" src="img/svg/sourses-6.svg" alt="" loading="lazy"/>
+										<div class="tabs__text">Flock
+										</div>
+									</div>
+								</div>
+								<div class="tabs__col col-auto">
+									<div class="tabs__item"><img class="res-i" src="img/svg/sourses-7.svg" alt="" loading="lazy"/>
+										<div class="tabs__text">Atom RSS
+										</div>
+									</div>
+								</div>
+								<div class="tabs__col col-auto">
+									<div class="tabs__item"><img class="res-i" src="img/svg/sourses-8.svg" alt="" loading="lazy"/>
+										<div class="tabs__text">Pushbullet
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="sSources__item">
+							<div class="sSources__iconWrap">
+								<svg class="icon icon-sources-other-1 ">
+									<use xlink:href="img/svg/sprite.svg#sources-other-1"></use>
+								</svg>
+							</div>
+							<div class="sSources__text">
+								<h4>Кастомизация источников</h4>
+								<p>Любой источник, представленный в&nbsp;сервисе, при необходимости, может быть изменен под ваши нужды (форматирование, локализация, своя логика обработки).</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="sSources__item">
+							<div class="sSources__iconWrap">
+								<svg class="icon icon-sources-other-2 ">
+									<use xlink:href="img/svg/sprite.svg#sources-other-2"></use>
+								</svg>
+							</div>
+							<div class="sSources__text">
+								<h4>Создание своих источников</h4>
+								<p>Так&nbsp;же вы&nbsp;можете создать интеграцию с&nbsp;любым сервисом самостоятельно, принимая сообщения в&nbsp;виде входящего запроса или e-mail.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- end sSources-->
+		<!-- start sRecipients-->
+		<section class="sRecipients section" id="sRecipients">
+			<div class="container">
+				<div class="section-title">
+					<p>Доступные</p>
+					<h2>Получатели</h2>
+				</div>
+				<div class="sRecipients__row row">
+					<div class="sRecipients__col col-auto">
+						<div class="sRecipients__item"><img class="res-i" src="img/svg/recipient-1.svg" alt="telegram" loading="lazy"/><span>telegram</span>
+						</div>
+					</div>
+					<div class="sRecipients__col col-auto">
+						<div class="sRecipients__item"><img class="res-i" src="img/svg/recipient-2.svg" alt="Skype" loading="lazy"/><span>Skype</span>
+						</div>
+					</div>
+					<div class="sRecipients__col col-auto">
+						<div class="sRecipients__item"><img class="res-i" src="img/svg/recipient-3.svg" alt="Slack" loading="lazy"/><span>Slack</span>
+						</div>
+					</div>
+					<div class="sRecipients__col col-auto">
+						<div class="sRecipients__item"><img class="res-i" src="img/svg/recipient-4.svg" alt="Viber" loading="lazy"/><span>Viber</span>
+						</div>
+					</div>
+					<div class="sRecipients__col col-auto">
+						<div class="sRecipients__item"><img class="res-i" src="img/svg/recipient-2.svg" alt="Skype" loading="lazy"/><span>Skype</span>
+						</div>
+					</div>
+					<div class="sRecipients__col col-auto">
+						<div class="sRecipients__item"><img class="res-i" src="img/svg/recipient-3.svg" alt="Slack" loading="lazy"/><span>Slack</span>
+						</div>
+					</div>
+					<div class="sRecipients__col col-auto">
+						<div class="sRecipients__item"><img class="res-i" src="img/svg/recipient-4.svg" alt="Viber" loading="lazy"/><span>Viber</span>
+						</div>
+					</div>
+					<div class="sRecipients__col col-auto">
+						<div class="sRecipients__item"><img class="res-i" src="img/svg/recipient-5.svg" alt="Facebook messenger" loading="lazy"/><span>Facebook messenger</span>
+						</div>
+					</div>
+					<div class="sRecipients__col col-auto">
+						<div class="sRecipients__item"><img class="res-i" src="img/svg/recipient-6.svg" alt="Vkontakte" loading="lazy"/><span>Vkontakte</span>
+						</div>
+					</div>
+					<div class="sRecipients__col col-auto">
+						<div class="sRecipients__item"><img class="res-i" src="img/svg/recipient-8.svg" alt="android" loading="lazy"/><span>android</span>
+						</div>
+					</div>
+					<div class="sRecipients__col col-auto">
+						<div class="sRecipients__item"><img class="res-i" src="img/svg/recipient-9.svg" alt="Google chrome" loading="lazy"/><span>Google chrome</span>
+						</div>
+					</div>
+					<div class="sRecipients__col col-auto">
+						<div class="sRecipients__item"><img class="res-i" src="img/svg/recipient-1.svg" alt="telegram" loading="lazy"/><span>telegram</span>
+						</div>
+					</div>
+					<div class="sRecipients__col col-auto">
+						<div class="sRecipients__item"><img class="res-i" src="img/svg/recipient-2.svg" alt="Skype" loading="lazy"/><span>Skype</span>
+						</div>
+					</div>
+					<div class="sRecipients__col col-auto">
+						<div class="sRecipients__item"><img class="res-i" src="img/svg/recipient-3.svg" alt="Slack" loading="lazy"/><span>Slack</span>
+						</div>
+					</div>
+				</div>
+				<div class="sRecipients__form">
+					<div class="sRecipients__flyIcon messenger"><img src="img/flyIcon-1.png" alt="" loading="lazy"/>
+					</div>
+					<div class="sRecipients__flyIcon microsoft-teams"><img src="img/flyIcon-2.png" alt="" loading="lazy"/>
+					</div>
+					<div class="sRecipients__flyIcon gmail"><img src="img/flyIcon-3.png" alt="" loading="lazy"/>
+					</div>
+					<div class="sRecipients__flyIcon gitter"><img src="img/flyIcon-4.png" alt="" loading="lazy"/>
+					</div>
+					<div class="row justify-content-between">
+						<div class="col-lg-6">
+							<h5>Хотите увидеть весь список получателей?</h5>
+							<p>В&nbsp;списке наших получателей приложения, которые есть почти в&nbsp;каждом смартфоне и&nbsp;компьютере. Мы&nbsp;уверены, что&nbsp;Вы найдете подходящие варианты и&nbsp;для себя!</p>
+						</div>
+						<div class="col-lg-auto"><a class="sRecipients__btn" href="#">Показать весь список</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- end sRecipients-->
+		<!-- start sFilter-->
+		<section class="sFilter section" id="sFilter">
+			<div class="container">
+				<div class="row">
+					<div class="sFilter__txtCol col-lg">
+						<div class="section-title">
+							<div class="section-title__subtitle">Сообщения
+							</div>
+							<h2>Фильтрация сообщений</h2>
+						</div>
+						<p>Всем сообщениям в&nbsp;Notify.Events, источник назначает приоритет и&nbsp;уровень. Вы&nbsp;можете использовать эти и другие свойства для фильтрации сообщений в свойствах каждой подписки.</p>
+					</div>
+					<div class="col-lg">
+						<div class="sFilter__slider sFilter__slider--js swiper-container">
+							<div class="swiper-wrapper">
+								<div class="fliterSlide swiper-slide">
+									<div class="fliterSlide__imgWrap"><img class="swiper-lazy res-i" src="#" data-src="img/svg/filterSlide-1.svg" alt=""/>
+									</div>
+									<div class="fliterSlide__text">
+										<div class="fliterSlide__method">Метод №1
+										</div>
+										<div class="fliterSlide__title">По приоритету
+										</div>
+										<p>Приоритет определяет важность сообщения. Всего существует 5 значений: "Незначительный", "Низкий", "Средний", "Высокий" и "Критичный". </p>
+										<p>Это свойство позволяет распределять сообщения, основываясь на их приоритете и отправлять их в удобном вам виде. </p>
+										<div class="fliterSlide__subtitle">Например:
+										</div>
+										<p><strong>“Незначительные" сообщения отправлять в Telegram</strong>, а "критичные" - <strong>получать в виде звонка на телефон.</strong></p>
+									</div>
+								</div>
+								<div class="fliterSlide swiper-slide">
+									<div class="fliterSlide__imgWrap"><img class="swiper-lazy res-i" src="#" data-src="img/svg/filterSlide-2.svg" alt=""/>
+									</div>
+									<div class="fliterSlide__text">
+										<div class="fliterSlide__method">Метод №2
+										</div>
+										<div class="fliterSlide__title">По уровням
+										</div>
+										<p>Определяет "тип" сообщения. Всего существует 6 типов: "Подробный", "Информация", "Уведомление", "Предупреждение", "Ошибка" и "Успешно".</p>
+										<p>Уровни позволяют определять состояние источника, пославшего уведомление и направлять эти уведомления соответсовующим способом.</p>
+										<div class="fliterSlide__subtitle">Например:
+										</div>
+										<p>"Подробное" сообщение с детальным логом сборки, отправлять на <strong>e-mail, а сообщение об ошибке - в Slack,</strong> для более быстрой рекции.</p>
+									</div>
+								</div>
+								<div class="fliterSlide swiper-slide">
+									<div class="fliterSlide__imgWrap"><img class="swiper-lazy res-i" src="#" data-src="img/svg/filterSlide-1.svg" alt=""/>
+									</div>
+									<div class="fliterSlide__text">
+										<div class="fliterSlide__method">Метод №3
+										</div>
+										<div class="fliterSlide__title">Ограничение по времени
+										</div>
+										<p>В свойствах каждой подписки вы можете определить, в какое время и день недели она будет принимать уведомления.</p>
+										<div class="fliterSlide__subtitle">Например:
+										</div>
+										<p>Это позволяет организовать посменную работу (уведомляя сотрудников только в их смену) или реализовать различные способы уведомления в зависимости от времени суток: <strong>днем присылать сообщения в мессенджеры, а ночью - в виде звонка на телефон.</strong></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="sFilter__controll-panell">
+					<div class="sFilter__slide-count-nums">
+						<div class="sFilter__current-slide current-slide-js">01
+						</div>
+						<div class="sFilter__dash-symb">/
+						</div>
+						<div class="sFilter__max-slides">03
+						</div>
+					</div>
+					<div class="sFilter__arrow-cont">
+						<div class="sFilter__pr-nt-parnter-sl prev-sl-js">
+							<div class="sFilter__arrow-icon-cont">
+								<svg class="icon icon-slider-left ">
+									<use xlink:href="img/svg/sprite.svg#slider-left"></use>
+								</svg>
+							</div>
+						</div>
+						<div class="sFilter__pr-nt-parnter-sl next-sl-js">
+							<div class="sFilter__arrow-icon-cont">
+								<svg class="icon icon-slider-right ">
+									<use xlink:href="img/svg/sprite.svg#slider-right"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- end sFilter-->
+		<!-- start sAdaptability-->
+		<section class="sAdaptability section" id="sAdaptability">
+			<div class="container">
+				<div class="section-title text-center">
+					<h2>sAdaptability</h2>
+				</div>
+				<div class="row"></div>
+			</div>
+		</section>
+		<!-- end sAdaptability-->
+		<!-- start sForm-->
+		<section class="sForm section" id="sForm">
+			<div class="container">
+				<div class="section-title text-center">
+					<h2>sForm</h2>
+				</div>
+				<div class="row"></div>
+			</div>
+		</section>
+		<!-- end sForm-->
+		<!-- start sContact-->
+		<section class="sContact section" id="sContact">
+			<div class="container">
+				<div class="section-title text-center">
+					<h2>sContact</h2>
+				</div>
+				<div class="row"></div>
+			</div>
+		</section>
+		<!-- end sContact-->
+		<footer class="footer block-with-lazy">
+			<div class="container">
+				<h2>footer</h2>
+			</div>
+		</footer>
+		<!--  start modals-->
+		<div class="modal-win" id="modal-call" style="display: none">
+			<div class="form-wrap">
+				<form>
+					<input type="hidden" name="example-input-field"/>
+					<input class="order" type="hidden" name="order" value="Заявка  с сайта"/>
+					<input class="utm_source" type="hidden" name="utm_source"/>
+					<input class="utm_term" type="hidden" name="utm_term"/>
+					<input class="utm_medium" type="hidden" name="utm_medium"/>
+					<input class="utm_campaign" type="hidden" name="utm_campaign"/>
+					<div class="text-center">
+						<div class="form-wrap__title form-data h3 ttu">Обратный звонок
+						</div>
+						<p class="after-headline">Заполните заявку и&nbsp;мы&nbsp;с&nbsp;Вами свяжемся в&nbsp;течение 15&nbsp;минут</p>
+						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta at blanditiis error quis incidunt ratione. Expedita ullam repellendus possimus eos ex quidem quisquam quam voluptatum ipsa doloremque molestias accusamus rem deserunt tenetur incidunt exercitationem laboriosam consequuntur, repudiandae dolore odit earum voluptatibus autem amet! Eligendi omnis necessitatibus at accusamus excepturi, debitis magnam alias. Dolore voluptatum hic assumenda quo non facilis sed sint fugit ex quam. Natus eligendi sequi repellat earum doloremque vero consequatur repudiandae ipsam libero odit alias quia expedita magni fugit perspiciatis aperiam maxime illo, voluptatem omnis tenetur suscipit molestias beatae distinctio totam? Excepturi quaerat dolorum natus reprehenderit voluptas officiis totam recusandae harum autem ipsum laboriosam dolorem, tempore, maxime nam dignissimos aperiam cupiditate accusantium deleniti. Iusto harum facere blanditiis minima dolor assumenda error nisi soluta perferendis animi? Distinctio maxime, perspiciatis neque dignissimos reprehenderit obcaecati quo provident, dolores labore laborum adipisci at veniam reiciendis aliquam nemo minus cumque sequi quasi architecto aliquid magnam tempore expedita? Repellendus veniam est dicta nihil, aspernatur molestiae ducimus quibusdam voluptatibus saepe. Repudiandae itaque rem animi voluptas voluptate? Expedita numquam architecto totam quo quod quibusdam ut, rem earum, similique dolorum excepturi nobis quis, tempore et exercitationem repellendus! Ipsa, consequuntur praesentium quaerat excepturi voluptas, delectus maiores necessitatibus explicabo consequatur neque optio doloremque temporibus similique doloribus pariatur velit aliquam magni cum! Repellat mollitia quam saepe porro, culpa unde! Molestias laboriosam vitae nihil facere corporis cupiditate eos ea saepe dolorem, eaque laudantium quam distinctio, fugit placeat maxime enim dicta rem eligendi accusamus, eum id. Incidunt, illum quaerat ab modi iste quasi non laboriosam unde, atque fugit delectus cumque eligendi sapiente dolore autem omnis alias, adipisci dicta illo corrupti optio? Esse error numquam fugit itaque ipsam fugiat nostrum repudiandae recusandae, nobis repellat aperiam officiis labore possimus neque velit, a obcaecati illum quasi suscipit veritatis! Ea earum obcaecati impedit possimus adipisci vitae animi commodi consequatur omnis amet? Quod sed doloremque id nesciunt iure recusandae iste voluptatibus unde eligendi porro nulla architecto voluptates quasi temporibus, fugit asperiores quis! Facere non, illo quisquam cumque voluptate earum voluptatem corporis eum cum commodi omnis autem sequi nisi sit iure aperiam iusto dolor harum? Ex eligendi vero reiciendis culpa ipsa suscipit debitis, quam earum maxime. Nemo officia quasi consequuntur velit rem culpa ipsa quas earum excepturi amet fuga eum consequatur, repellendus commodi facere maxime. Magni voluptas consequatur facere dolores ut culpa, expedita fugit? Quae placeat asperiores est, fuga eligendi eius similique necessitatibus explicabo? Eveniet corporis tempora reiciendis, dolore ipsam quos aut ea alias amet nihil? Excepturi maiores mollitia inventore voluptate est ullam reprehenderit itaque iure quasi non molestias, vel veniam alias! Obcaecati laudantium ex incidunt autem ipsam a suscipit, in dolorem error deserunt minima laborum nulla facere officia sunt. Aliquid repellat rem sunt reprehenderit. Fugit perferendis officiis labore nesciunt pariatur optio minima aperiam et similique maxime odio laudantium eligendi deleniti culpa exercitationem impedit, fugiat magni vero temporibus eos obcaecati esse possimus asperiores dolores! Quod iure eius minus adipisci? Architecto sapiente corrupti error! Magni ea tempore laboriosam minus totam facilis iure voluptates nostrum officiis dignissimos nihil necessitatibus quam in, commodi molestiae expedita facere asperiores ad! Corporis delectus magnam, vel aspernatur rem laboriosam autem soluta aliquam iure impedit? Deserunt ad nam excepturi, quibusdam qui nisi necessitatibus, voluptatibus deleniti quo cumque ipsam cum repudiandae impedit in a laborum dignissimos ratione labore vitae officia quaerat magnam. Saepe ullam omnis harum reprehenderit beatae pariatur est? Animi dolores necessitatibus corrupti velit architecto obcaecati doloremque vero sapiente quaerat praesentium? Veniam illum iusto ea sunt deserunt, omnis consequatur est adipisci aliquid magnam quibusdam animi debitis magni excepturi accusamus vel facilis ipsa blanditiis expedita cumque fugiat! Aspernatur voluptatum quos corrupti blanditiis? Sapiente pariatur sunt culpa nesciunt consequatur eaque veritatis laborum possimus, saepe at nam amet exercitationem assumenda temporibus illo aliquid asperiores quae impedit beatae voluptatem? Vitae, totam quos odio nobis perferendis unde! Voluptates voluptatum, sint iure aliquid quis quod voluptatem saepe et similique, repellendus dolorum. Sed vel illo quisquam cum aut, ullam impedit quaerat a odit alias fugit repudiandae. Consequuntur voluptas explicabo eligendi, beatae esse nihil laborum illo rerum ab dolorum nemo iste est doloremque magnam. Repellendus in voluptates cumque ullam, cum odio quam deserunt optio doloremque modi nobis itaque cupiditate ea, neque exercitationem laborum, obcaecati mollitia earum debitis accusamus nisi dolorem autem libero dicta! Atque ad doloribus distinctio cumque nobis labore placeat? Necessitatibus, accusamus deleniti numquam asperiores distinctio tempora consectetur minus veritatis cum repellat architecto voluptatibus minima omnis aliquam fugit maiores eos veniam consequatur, rerum ex illo facere? Suscipit distinctio qui quae asperiores voluptates nobis unde, nisi soluta natus aspernatur tempore libero, nam iure? Modi, explicabo iusto tenetur placeat praesentium, sunt voluptatum soluta reiciendis quam atque hic dolorum in, esse consequuntur voluptate animi doloremque saepe expedita voluptates? Consectetur sint assumenda quaerat deleniti. Exercitationem, quas beatae. Ut ipsam eum nisi fugiat numquam saepe tempore dolorem necessitatibus consequatur, voluptatem eligendi magni laborum nostrum sed accusamus ducimus laudantium minus animi. Totam expedita vero voluptas libero ipsa! Facilis ullam vel libero aliquam sit itaque quasi delectus a rerum laborum, possimus, eos inventore nulla, excepturi exercitationem aliquid unde porro. Odio nulla labore repellat exercitationem cupiditate voluptates, obcaecati asperiores eligendi delectus commodi deserunt provident sit nam praesentium culpa cum amet explicabo, nisi dolores? Recusandae provident veritatis porro corporis voluptatem assumenda necessitatibus at. Sint quam in facere nihil hic cupiditate porro sapiente nisi, et ratione placeat commodi unde excepturi error repellat earum perspiciatis quisquam amet tempora. Expedita, ipsum? Molestias mollitia voluptatum sapiente inventore, perspiciatis ab laudantium, voluptatibus amet aliquid laborum autem? Adipisci aliquid voluptatum numquam quas quia ullam error sed illo, sit minima, consectetur temporibus unde? Rerum minima necessitatibus est expedita assumenda nesciunt, modi ea fugiat consectetur ad corporis velit ducimus quia aut cumque iusto voluptatibus et perferendis ipsum! Excepturi perferendis veritatis cumque quo, quod facere facilis impedit magnam numquam repellat ad tempora! Pariatur distinctio laborum, quaerat dolorem nostrum totam animi. Ipsa distinctio consectetur explicabo culpa, esse reprehenderit eveniet obcaecati, repudiandae dolorum vero expedita modi exercitationem iure aut provident sit cum adipisci consequatur id delectus voluptatum fuga ducimus natus. Cum, aperiam impedit error illo hic similique quo iure omnis ullam sapiente modi.</p>
+					</div>
+					<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control" type="text" placeholder="Ваше Имя" name="text" required="required"/> 
+					</div>
+					<!-- +e.input-wrap-->
+					<button class="form-wrap__btn btn" type="submit"> 
+					</button>
+					<div class="form-wrap__polite">
+						<label class="custom-input"><input class="custom-input__input" type="checkbox" name="checkbox" checked="checked"/><span class="custom-input__lab"></span><small class="custom-input__text text-secondary">Согласен на обработку и хранение моих персональных данных в соответствии с условиями</small>
+						</label>
+					</div>
+				</form>
+			</div>
+		</div>
+		<!-- #modal-call-->
+		<!-- end modals-->
+		<script src="libs/loading-attribute-polyfill/loading-attribute-polyfill.min.js"></script>
+		<script src="libs/jquery/jquery.min.js"></script>
+		<!-- modal libs-->
+		<script src="libs/@fancyapps/fancybox/jquery.fancybox.min.js"></script>
+		<!-- modal libs-->
+		<!-- slider libs-->
+		<script src="libs/swiper/js/swiper.min.js"></script>
+		<!-- /slider libs-->
+		<script src="libs/inputmask/inputmask.min.js"></script>
+		<script src="js/common.js"></script>
+	</body>
+</html>
