@@ -12,11 +12,15 @@
 		background-color: $purple;
 
 		.sAdvantage__row {
-			flex-direction: row-reverse;
+			@include media-breakpoint-up(lg) {
+				flex-direction: row-reverse;
+			}
 		}
 
 		.sAdvantage__picCol {
-			padding-left: 0;
+			@include media-breakpoint-up(lg) {
+				padding-left: 0;
+			}
 		}
 		.sAdvantage__textCol {
 			@include media-breakpoint-up(xl) {
@@ -87,7 +91,10 @@
 		padding-top: rem(25);
 
 		.h5 {
-			margin-bottom: 1.5rem;
+			margin-bottom: .6rem;
+			@include media-breakpoint-up(md) {
+				margin-bottom: 1.5rem;
+			}
 		}
 	}
 
@@ -98,11 +105,16 @@
 	}
 
 	&__gridRow {
-		padding-top: rem(7);
+		padding-top: rem(20);
+		@include media-breakpoint-up(sm) {
+			padding-top: rem(5);
+		}
 		max-width: 240px;
 		@include media-breakpoint-down(xs) {
 			display: grid;
-			grid-template-columns: repeat(2,1fr);
+			grid-template-columns: 90px 1fr;
+			margin-left: auto;
+			margin-right: auto;
 		}
 	}
 
@@ -126,7 +138,7 @@
 
 
 	&__notAll {
-		font-size: $small;
+		font-size: 14px;
 	}
 
 
@@ -141,6 +153,9 @@
 		color: #3c3249;
 		font-size: $small;
 		font-weight: 700;
+		@include media-breakpoint-down(sm) {
+			font-size: 16px;
+		}
 	}
 
 	&__col {
@@ -149,9 +164,15 @@
 		display: flex;
 		flex-direction: column;
 		height: 100%;
+		min-height: rem(100px);
 		img {
 			margin-bottom: auto;
-			
+			@include media-breakpoint-down(xs) {
+				max-width: 45px;
+				max-height: 45px;
+				margin-left: auto;
+				margin-right: auto;
+			}
 		}
 	}
 

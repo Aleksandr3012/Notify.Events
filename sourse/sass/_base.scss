@@ -8,8 +8,8 @@
 	overflow: hidden;
 	width: 100%;
 	height: 100%;
-	background-position: center -305px;
-	background-position: center 0px;
+	background-position: center -262px;
+	// background-position: center 0px;
 	opacity: 0;
 	// opacity: 0.7;
 }
@@ -92,6 +92,13 @@ h5, .h5 {
 	}
 }
 
+h3, .h3 {
+	font-size: rem(18);
+	@include media-breakpoint-up(md) {
+		font-size: $h3-font-size;
+	}
+}
+
  
 
 
@@ -103,6 +110,9 @@ h5, .h5 {
 	max-width: 1500px;
 	margin-left: auto;
 	margin-right: auto;
+	@include media-breakpoint-down(md) {
+		overflow: hidden;
+	}
 }
 
 .section-title { 

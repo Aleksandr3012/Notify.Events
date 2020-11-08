@@ -13,6 +13,7 @@
 	}
 	margin-bottom: 1px;
 	color: #fff;
+	overflow: visible !important;
 
 	&__scrollBlock {
 		// position: absolute;
@@ -38,10 +39,10 @@
 
 		&::before {
 			content: '';
-			@include media-breakpoint-up(md) {
-				top: rem(66);
-			}
-			top: rem(64);
+			// @include media-breakpoint-up(md) {
+			// 	top: rem(65);
+			// }
+			top: rem(65);
 			left: rem(-140);
 			position: absolute;
 			width: rem(300);
@@ -62,7 +63,10 @@
 		max-width: rem(520);
 		line-height: 150%;
 		letter-spacing: rem(1);
-		margin-bottom: rem(37);
+		margin-bottom: rem(25);
+		@include media-breakpoint-up(md) {
+			margin-bottom: rem(37);
+		}
 	}
 
 	&__imgWrap {
@@ -70,6 +74,7 @@
 			max-width: rem(220);
 			margin-left: auto;
 			margin-right: auto;
+			margin-bottom: rem(12);
 		}
 	}
 

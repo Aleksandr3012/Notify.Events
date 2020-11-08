@@ -7,29 +7,40 @@
 		padding-top: rem(190);
 	}
 	color: $white;
-	@include media-breakpoint-down(md) {
+	@include media-breakpoint-down(sm) {
 		text-align: center;
 	}
 
 	ul {
 		max-width: rem(515);
+		@include media-breakpoint-only(sm) {
+			margin-left: auto;
+			margin-right: auto;
+		}
 		@include media-breakpoint-up(sm) {
 			column-count: 2;
 		}
 		@include media-breakpoint-up(lg) {
 			margin-top: rem(-8);
 		}
+
+		@include media-breakpoint-down(sm) {
+			margin-bottom: 1.4rem;
+		}
 	}
 
 	li {
 		list-style: none;
-		line-height: 2.5;
+		line-height: 2.3;
+		@include media-breakpoint-up(md) {
+			line-height: 2.5;
+		}
 		font-size: $small;
 
 		a {
 			color: $white;
-
 		}
+
 	}
 
 	&__requisites {
@@ -42,7 +53,10 @@
 	&__logo {
 		display: block;
 		max-width: rem(180);
-		margin-bottom: rem(30);
+		margin-bottom: rem(17);
+		@include media-breakpoint-up(md) {
+			margin-bottom: rem(30);
+		}
 		@include media-breakpoint-down(sm) {
 			margin-left: auto;
 			margin-right: auto;
@@ -69,13 +83,28 @@
 		@extend .btn;
 		@extend .btn-primary;
 		border-radius: $border-radius-sm;
-		padding: rem(17) rem(23);
+		padding: rem(20) rem(23);
+		@include media-breakpoint-up(md) {
+			padding: rem(17) rem(23);
+		}
+		@include media-breakpoint-only(md) {
+			padding: 17px 5px;
+			margin-right: -10px;
+			margin-left: -10px;
+			display: block;
+		}
 		margin-bottom: rem(30);
 		font-size: $small;
+		@include media-breakpoint-down(xs) {
+			display: block;
+		}
 
 		.icon {
 			font-size: rem(16);
 			margin-right: rem(9);
+			@include media-breakpoint-only(md) {
+				margin-right: rem(5);
+			}
 		}
 	}
 

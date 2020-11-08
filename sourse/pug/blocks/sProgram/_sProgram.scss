@@ -1,6 +1,9 @@
 // start .sProgram
 .sProgram {
-	padding-top: calc(var(--sPT) / 1.55);
+	padding-top: calc(var(--sPT) / 3.4);
+	@include media-breakpoint-up(lg) {
+		padding-top: calc(var(--sPT) / 1.55);
+	}
 	padding-bottom: 0;
 	margin-bottom: rem(-75);
 	position: relative;
@@ -15,13 +18,19 @@
 	&__col {
 		position: relative;
 		height: 100%;
+		@include media-breakpoint-only(md) {
+			padding-bottom: rem(90) !important;
+		}
 		@include media-breakpoint-up(lg) {
-			min-height: 482px;
-			padding-top: rem(87);
 			padding-bottom: rem(90);
+			min-height: 570px;
+			padding-top: rem(87);
+		}
+		@include media-breakpoint-up(xl) {
+			min-height: 482px;
 		}
 		@include media-breakpoint-down(md) {
-			padding: rem(30) rem(25) rem(0);
+			padding: rem(30) rem(44) rem(0);
 		}
 		display: flex;
 		flex-direction: column;
@@ -56,6 +65,9 @@
 		}
 		&:nth-child(2) {
 			@include media-breakpoint-up(lg) {
+				padding-left: rem(60);
+			}
+			@include media-breakpoint-up(xl) {
 				padding-left: rem(133);
 			}
 			&::before {
@@ -121,6 +133,12 @@
 .accardionBlock {
 	padding-top: rem(14);
 	@include media-breakpoint-up(md) {
+		max-width: rem(350);
+	}
+	@include media-breakpoint-up(lg) {
+		max-width: rem(240);
+	}
+	@include media-breakpoint-up(xxl) {
 		max-width: rem(298);
 	}
 	@include media-breakpoint-down(sm) {

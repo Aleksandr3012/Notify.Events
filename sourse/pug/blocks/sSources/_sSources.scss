@@ -22,6 +22,9 @@
 		background-size: cover;
 		width: 110vw;
 		height: 237px;
+		@include media-breakpoint-up(md) {
+			height: 410px;
+		}
 		@include media-breakpoint-up(lg) {
 			height: 453px;
 		}
@@ -146,8 +149,12 @@
 	}
 
 	&__wrap {
-		padding-top: rem(47);
+		padding-top: rem(20);
 		padding-bottom: rem(65);
+		@include media-breakpoint-up(lg) {
+			padding-top: rem(47);
+			padding-bottom: rem(65);
+		}
 	}
 
 	&__btn {
@@ -277,7 +284,7 @@
 		z-index: 1;
 
 		.icon {
-			font-size: rem(24);
+			font-size: rem(26);
 			color: $secondary;
 			margin-right: rem(12);
 		}

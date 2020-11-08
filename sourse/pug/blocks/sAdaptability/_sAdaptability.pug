@@ -8,7 +8,7 @@ mixin sAdaptability(data)
 				
 			.row.justify-content-center
 				mixin item(i,t)
-					+e.col.col-sm-6.col-lg
+					+e.col.col-sm-6.col-md-4.col-lg
 						+e.imgWrap
 							img.res-i.loading-lazy(src=`img/svg/adaptability-${i}.svg`, alt="", loading="lazy")
 						p!= t
@@ -16,6 +16,6 @@ mixin sAdaptability(data)
 				+item('1',`Адаптивность под разные устройства`)
 				+item('2',`Возможность присылать&nbsp;картинки`)
 				+item('3',`Возможность прикреплять&nbsp;файлы`)
-				+item('4',`Поддержка форматированых сообщений (HTML)`)
+				+item('4',`Поддержка<br> форматированых<br> сообщений (HTML)`)
 				+item('5',`Поддержка действий в&nbsp;чате`)
 	// end sAdaptability

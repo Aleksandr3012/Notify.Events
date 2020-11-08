@@ -1,7 +1,11 @@
 // start .sAdaptability
 .sAdaptability {
-	padding-top: calc(var(--sPT) * 1.6);
-	padding-bottom: calc(var(--sPB) * 1.5);
+	padding-top: calc(var(--sPT) / 1.6);
+	padding-bottom: calc(var(--sPB) * 1.2);
+	@include media-breakpoint-up(lg) {
+		padding-top: calc(var(--sPT) * 1.6);
+		padding-bottom: calc(var(--sPB) * 1.5);
+	}
 	&__col {
 		display: flex;
 		align-items: center;
@@ -15,10 +19,16 @@
 	}
 
 	.section-title {
-		padding-bottom: calc(var(--sTPB) * 4);
+		padding-bottom: calc(var(--sTPB) * 2.5);
+		@include media-breakpoint-up(lg) {
+			padding-bottom: calc(var(--sTPB) * 4);
+		}
 
 		&__subtitle {
-			padding-bottom: rem(17);
+			padding-bottom: rem(6);
+			@include media-breakpoint-up(md) {
+				padding-bottom: rem(17);
+			}
 		}
 
 		h2 {
@@ -28,8 +38,8 @@
 
 	&__imgWrap {
 		@include media-breakpoint-down(xs) {
-			margin-right: rem(25);
-			width: rem(78);
+			margin-right: rem(30);
+			width: rem(87);
 		}
 		flex-shrink: 0;
 		position: relative;
@@ -52,8 +62,10 @@
 		line-height: 130%;
 		color: #3c3249;
 		max-width: rem(220);
-		margin-left: auto;
-		margin-right: auto;
+		@include media-breakpoint-up(sm) {
+			margin-left: auto;
+			margin-right: auto;
+		}
 	}
 	
 

@@ -2,8 +2,12 @@
 // start .sTariffs
 .sTariffs {
 	overflow: hidden;
-	padding-top: calc(var(--sPT) * 1.6);
-	padding-bottom: calc(var(--sPB) / 1.4);
+	padding-top: calc(var(--sPT) / 1.6);
+	padding-bottom: calc(var(--sPB) * 1.1);
+	@include media-breakpoint-up(lg) {
+		padding-top: calc(var(--sPT) * 1.6);
+		padding-bottom: calc(var(--sPB) / 1.4);
+	}
 	position: relative;
 	background-color: $purple;
 	&::before {
@@ -31,7 +35,10 @@
 		padding-bottom: calc(var(--sTPB) * 2.55);
 		&__subtitle {
 			color: #b7a6d0;
-			padding-bottom: rem(16);
+			padding-bottom: rem(7);
+			@include media-breakpoint-up(md) {
+				padding-bottom: rem(16);
+			}
 		}
 	}
 
@@ -81,7 +88,10 @@
 		}
 
 		strong {
-			font-size: $h5-font-size;
+			font-size: $em-base;
+			@include media-breakpoint-up(md) {
+				font-size: $h5-font-size;
+			}
 			line-height: 1;
 		}
 	}
@@ -106,7 +116,10 @@
 	&__title {
 		background-color: #8c7ea1;
 		color: $white;
-		font-size: 21px;
+		font-size: 18px;
+		@include media-breakpoint-up(md) {
+			font-size: 21px;
+		}
 		font-weight: 700;
 		padding-top: rem(14);
 		padding-bottom: rem(14);
@@ -119,7 +132,10 @@
 	}
 
 	li {
-		padding: rem(15) rem(15) rem(14);
+		padding: rem(10);
+		@include media-breakpoint-up(md) {
+			padding: rem(15) rem(15) rem(14);
+		}
 		list-style: none;
 		&:not(:last-child) {
 			border-bottom: solid 1px #f1f1f1;
@@ -129,7 +145,9 @@
 			font-size: $xsmall;
 			color: #8c7ea1;
 			display: block;
-			margin-bottom: 5px;
+			@include media-breakpoint-up(md) {
+				margin-bottom: 5px;
+			}
 		}
 	}
 
@@ -159,21 +177,28 @@
 		box-shadow: 0 19px 36px rgba(0, 0, 0, 0.1);
 		.tariffSlide__title {
 			background-color: $primary;
-			font-size: 26px;
+			@include media-breakpoint-up(md) {
+				font-size: 26px;
+			}
 			padding-bottom: rem(10);
 		}
 
 		li {
-			padding: rem(14) rem(15) rem(14);
+			@include media-breakpoint-up(md) {
+				padding: rem(14) rem(15) rem(14);
+			}
 			span {
-				
-				padding-bottom: 4px;
+				@include media-breakpoint-up(md) {
+					padding-bottom: 4px;
+				}
 			}
 		}
 
 		.tariffSlide__block {
 			h5 {
-				font-size: 31px;
+				@include media-breakpoint-up(md) {
+					font-size: 31px;
+				}
 				line-height: 1;
 			}
 		}

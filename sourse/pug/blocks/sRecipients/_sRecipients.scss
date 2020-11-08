@@ -116,25 +116,53 @@
 		@include media-breakpoint-down(md) {
 			margin-top: rem(30);
 		}
+		@include media-breakpoint-down(xs) {
+			width: 100%;
+		}
 	}
 
 	&__flyIcon {
 		position: absolute;
 		&.messenger {
-			right: 48.5%;
-			top: 10%;
+			display: none;
+			@include media-breakpoint-up(lg) {
+				display: block;
+				right: 48.5%;
+				top: 10%;
+			}
 		}
 		&.microsoft-teams {
-			right: 31%;
-			top: 15%;
+			right: -10px;
+			top: -10px;
+			@include media-breakpoint-up(lg) {
+				right: 31%;
+				top: 15%;
+			}
+			@include media-breakpoint-down(md) {
+				max-width: 65px;
+			}
 		}
 		&.gmail {
-			right: 21%;
-			top: 12%;
+			right: 90%;
+			top: 55%;
+			@include media-breakpoint-up(lg) {
+				right: 21%;
+				top: 12%;
+			}
+			@include media-breakpoint-down(md) {
+				width: 55px;
+			}
 		}
 		&.gitter {
-			right: rem(-35);
-			bottom: rem(-47);
+			right: rem(0);
+			bottom: rem(-30px);
+			@include media-breakpoint-up(lg) {
+				right: rem(-35);
+				bottom: rem(-47);
+			}
+			@include media-breakpoint-down(md) {
+				max-width: 70px;
+			}
 		}
 	}
 

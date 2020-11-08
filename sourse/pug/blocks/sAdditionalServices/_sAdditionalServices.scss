@@ -1,7 +1,11 @@
 // start .sAdditionalServices
 .sAdditionalServices {
-	padding-top: calc(var(--sPT) / 1.3);
-	padding-bottom: calc(var(--sPB) / 1.6);
+	padding-top: calc(var(--sPT) / 3);
+	// padding-bottom: calc(var(--sPB) * 1.6);
+	@include media-breakpoint-up(lg) {
+		padding-top: calc(var(--sPT) / 1.3);
+		padding-bottom: calc(var(--sPB) / 1.6);
+	}
 	// margin-bottom: rem(50);
 	border-top: 1px solid #EFEBF7;
 	border-bottom-right-radius: $btn-border-radius;
@@ -11,10 +15,14 @@
 	overflow: hidden;
 
 	h4 {
-		font-size: 25px;
+		font-size: 20px;
+		margin-bottom: 1.2rem;
+		@include media-breakpoint-up(md) {
+			font-size: 25px;
+			margin-bottom: .4rem;
+		}
 		color: #3c3249;
 		font-weight: 700;
-		margin-bottom: .4rem;
 	}
 
 	@include media-breakpoint-up(md) {
@@ -80,7 +88,7 @@
 	}
 
 	&__body, &__topLine {
-		padding: rem(7) rem(15);
+		padding: rem(11) rem(15);
 		@include media-breakpoint-up(md) {
 			padding: rem(15) rem(17);
 		}

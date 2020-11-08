@@ -4,10 +4,14 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	padding-top: calc(var(--sPT) / 1.65);
+	padding-bottom: calc(var(--sPB) * 2.6);
 	@include media-breakpoint-up(md) {
 		padding-top: calc(var(--sPT) * 1.45);
+		padding-bottom: calc(var(--sPB) * 2);
 	}
-	padding-bottom: calc(var(--sPB) * 2);
+	@include media-breakpoint-down(md) {
+		overflow: hidden;
+	}
 
 	.section-title {
 		&__subtitle {
@@ -62,11 +66,19 @@
 					--containerW: #{$container-max-width};
 			}
 		};
-		width: calc(100% + (100vw - var(--containerW)) / 2);
+		@include media-breakpoint-up(sm) {
+			width: calc(100% + (100vw - var(--containerW)) / 2);
+		}
+		width: 100%;
 		// max-width: calc(464px + (100vw - 1170px)/2);
-		// overflow: visible;
+		@include media-breakpoint-down(md) {
+			overflow: visible;
+		}
 		padding-top: 4px;
-		padding-bottom: rem(60);
+		padding-bottom: rem(25);
+		@include media-breakpoint-up(lg) {
+			padding-bottom: rem(60);
+		}
 		.swiper-wrapper {
 		}
 	}
@@ -74,7 +86,7 @@
 } // end.sFilter
 
 .fliterSlide {
-  box-shadow: 0 21px 48px rgba(88, 68, 117, 0.08);
+  box-shadow: 0 rem(21px) rem(48px) rgba(88, 68, 117, 0.08);
   border-radius: $btn-border-radius;
 	background-color: $white;
 	overflow: hidden;
@@ -88,8 +100,16 @@
 	position: relative;
 	
 	&__imgWrap{
-		max-width: 230px;
+		@include media-breakpoint-down(xs) {
+			margin-top: rem(20);
+			max-height: 120px;
+			margin-right: auto;
+			margin-bottom: rem(35);
+		}
+		margin-left: auto;
+		max-width: 140px;
 		@include media-breakpoint-up(sm) {
+			max-width: 230px;
 			position: absolute;
 			right: 17%;
 			top: 9%;
@@ -97,7 +117,6 @@
 			margin-right: rem(-30);
 			margin-bottom: rem(-30);
 		}
-		margin-left: auto;
 	}
 
 	&__method {
@@ -110,7 +129,10 @@
 	}
 
 	&__title {
-		font-size: rem(27px);
+		font-size: rem(20px);
+		@include media-breakpoint-up(md) {
+			font-size: rem(27px);
+		}
 		color: $secondary;
 		font-weight: 700;
 		margin-bottom: .1rem;
@@ -151,7 +173,10 @@
 	}
 
 	&__current-slide {
-		font-size: 38px;
+		font-size: 23px;
+		@include media-breakpoint-up(md) {
+			font-size: 38px;
+		}
 		color: $secondary;
 		line-height: 1;
 	}
@@ -175,8 +200,12 @@
 		border: 1px solid #8C7EA1;
 		flex-shrink: 0;
 		margin-right: rem(15);
-		width: 45px;
-		height: 45px;
+		width: 36px;
+		height: 36px;
+		@include media-breakpoint-up(md) {
+			width: 45px;
+			height: 45px;
+		}
 		border-radius: 50%;
 		display: grid;
 		place-items: center;
