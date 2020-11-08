@@ -120,35 +120,35 @@ const JSCCommon = {
 	},
 	// /mobileMenu
 
-	// табы  .
-	tabscostume(tab) {
+	// // табы  .
+	// tabscostume(tab) {
 
-		let tabs = {
-			Btn: [].slice.call(document.querySelectorAll(`.${tab}__btn`)),
-			BtnParent: [].slice.call(document.querySelectorAll(`.${tab}__caption`)),
-			Content: [].slice.call(document.querySelectorAll(`.${tab}__content`)),
-		}
-		tabs.Btn.forEach((element, index) => {
-			element.addEventListener('click', () => {
-				if (!element.classList.contains('active')) {
-					let siblings = element.parentNode.querySelector(`.${tab}__btn.active`);
-					let siblingsContent = tabs.Content[index].parentNode.querySelector(`.${tab}__content.active`);
-					siblings.classList.remove('active');
-					siblingsContent.classList.remove('active')
-					element.classList.add('active');
-					tabs.Content[index].classList.add('active');
-				} 
-			})
-		})
-		// $('.' + tab + '__caption').on('click', '.' + tab + '__btn:not(.active)', function (e) {
-		// 	$(this)
-		// 		.addClass('active').siblings().removeClass('active')
-		// 		.closest('.' + tab).find('.' + tab + '__content').hide().removeClass('active')
-		// 		.eq($(this).index()).fadeIn().addClass('active');
+	// 	let tabs = {
+	// 		Btn: [].slice.call(document.querySelectorAll(`.${tab}__btn`)),
+	// 		BtnParent: [].slice.call(document.querySelectorAll(`.${tab}__caption`)),
+	// 		Content: [].slice.call(document.querySelectorAll(`.${tab}__content`)),
+	// 	}
+	// 	tabs.Btn.forEach((element, index) => {
+	// 		element.addEventListener('click', () => {
+	// 			if (!element.classList.contains('active')) {
+	// 				let siblings = element.parentNode.querySelector(`.${tab}__btn.active`);
+	// 				let siblingsContent = tabs.Content[index].parentNode.querySelector(`.${tab}__content.active`);
+	// 				siblings.classList.remove('active');
+	// 				siblingsContent.classList.remove('active')
+	// 				element.classList.add('active');
+	// 				tabs.Content[index].classList.add('active');
+	// 			} 
+	// 		})
+	// 	})
+	// 	// $('.' + tab + '__caption').on('click', '.' + tab + '__btn:not(.active)', function (e) {
+	// 	// 	$(this)
+	// 	// 		.addClass('active').siblings().removeClass('active')
+	// 	// 		.closest('.' + tab).find('.' + tab + '__content').hide().removeClass('active')
+	// 	// 		.eq($(this).index()).fadeIn().addClass('active');
 
-		// });
+	// 	// });
 
-	},
+	// },
 	// /табы
 
 	inputMask() {
@@ -246,7 +246,7 @@ const $ = jQuery;
 function eventHandler() {
 	JSCCommon.ifie();
 	JSCCommon.modalCall();
-	JSCCommon.tabscostume('tabs');
+	// JSCCommon.tabscostume('tabs');
 	JSCCommon.mobileMenu();
 	JSCCommon.inputMask();
 	JSCCommon.sendForm();
@@ -281,6 +281,9 @@ function eventHandler() {
 
 	whenResize();
 
+	$('.resp-tabs-js').easyResponsiveTabs({
+		activate: function () {}
+	});
 
 	let defaultSl = {
 		spaceBetween: 0,
@@ -315,29 +318,48 @@ function eventHandler() {
 		...defaultSl,
 		slidesPerView: 'auto',
 		freeMode: true,
+		centeredSlides: true,
 		loopFillGroupWithBlank: true,
 		touchRatio: 0.2,
 		slideToClickedSlide: true,
 		freeModeMomentum: true,
+		// loop: true,
+
+		// breakpoints: {
+		// 	576: {
+		// 		spaceBetween: 30
+		// 	},
+		// 	992 : {
+		// 		spaceBetween: 40,
+		// 	},
+		// },
 		on: {
 			slideChange: function () {
-				if (!tarifSlider) return
-				let currentSlideTxt = document.querySelector('.current-slide-js');
+				if (!swiper4) return
+				let currentSlideTxt = document.querySelector('.sTariffs .current-slide-js');
 				if (!currentSlideTxt) return;
 
-				currentSlideTxt.innerHTML = addZero(tarifSlider.realIndex + 1);
+				currentSlideTxt.innerHTML = addZero(swiper4.realIndex + 1);
 			},
 		}
 	});
+	swiper4.slideTo(2);
 	// modal window
 	//prev, next
 	$('.sTariffs .next-sl-js').on('click', function () {
-		tarifSlider.slideNext();
+		swiper4.slideNext();
 	});
 	$('.sTariffs .prev-sl-js').on('click', function () {
-		tarifSlider.slidePrev();
+		swiper4.slidePrev();
 	});
 
+	function addZero(num) {
+		num = Number(num);
+		if (num >= 0 && num <=9) {
+			num = "0" + num;
+		}
+		return num
+	}
 
 	let filterSlider =  new Swiper('.sFilter__slider--js', {
 		spaceBetween: 10,
@@ -351,7 +373,7 @@ function eventHandler() {
 			},
 		},
 
-		loop: false,
+		loop: true,
 
 		//autoplay
 		//autoplay: {
@@ -366,7 +388,7 @@ function eventHandler() {
 		on: {
 			slideChange: function () {
 				if (!filterSlider) return
-				let currSlideTxt = document.querySelector('.current-slide-js');
+				let currSlideTxt = document.querySelector('.sFilter .current-slide-js');
 				if (!currSlideTxt) return;
 
 				currSlideTxt.innerHTML = addZero(filterSlider.realIndex + 1);

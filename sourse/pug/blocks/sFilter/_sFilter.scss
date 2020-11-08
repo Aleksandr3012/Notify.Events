@@ -50,14 +50,22 @@
 	@include media-breakpoint-down(xl) {}
 
 	&__slider {
+		// width: 100%;
 		@include media-breakpoint-up(lg) {
 			position: absolute;
 			left: 0;
 			top: 0;
 		}
+		 
+		@each $breakpoint, $container-max-width in $container-max-widths {
+			@include media-breakpoint-up($breakpoint, $grid-breakpoints) {
+					--containerW: #{$container-max-width};
+			}
+		};
+		width: calc(100% + (100vw - var(--containerW)) / 2);
+		// max-width: calc(464px + (100vw - 1170px)/2);
 		// overflow: visible;
 		padding-top: 4px;
-		margin-right: -100%;
 		padding-bottom: rem(60);
 		.swiper-wrapper {
 		}

@@ -46,6 +46,9 @@
 		overflow: visible;
 
 		.swiper-wrapper {
+			@include media-breakpoint-up(lg) {
+				transform: none !important;
+			}
 			// justify-content: center;
 			// margin-right: ;
 		}
