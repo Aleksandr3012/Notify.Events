@@ -8,7 +8,8 @@
 	overflow: hidden;
 	width: 100%;
 	height: 100%;
-	background-position: center 0;
+	background-position: center -305px;
+	background-position: center 0px;
 	opacity: 0;
 	// opacity: 0.7;
 }
@@ -77,6 +78,20 @@ body {
 // }
  
 
+h1, .h1 {
+	font-size: 27px;
+	@include media-breakpoint-up(md) {
+		font-size: $h1-font-size;
+	}
+}
+
+h5, .h5 {
+	font-size: rem(16);
+	@include media-breakpoint-up(md) {
+		font-size: $h5-font-size;
+	}
+}
+
  
 
 
@@ -92,6 +107,17 @@ body {
 
 .section-title { 
 	padding-bottom: var(--sTPB);
+
+	&__subtitle {
+		font-weight: bold;
+		letter-spacing: 0.16em;
+		color: $secondary;
+		text-transform: uppercase;
+	}
+
+	h2 {
+		@extend .h1;
+	}
 }
 
 
@@ -253,6 +279,13 @@ ul {
 	padding: 0;
 	clip: rect(0 0 0 0);
 	overflow: hidden;
+}
+
+.container {
+	@include media-breakpoint-down(md) {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
 }
 
 

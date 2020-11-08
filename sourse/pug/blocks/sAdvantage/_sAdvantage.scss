@@ -39,7 +39,10 @@
 			color: $secondary;
 			font-weight: 700;
 			letter-spacing: 0.16em;
-			margin-bottom: 1.9rem;
+			margin-bottom: 1.1rem;
+			@include media-breakpoint-up(md) {
+				margin-bottom: 1.9rem;
+			}
 		}
 	}
 	
@@ -56,8 +59,14 @@
 	}
 
 	&__link {
-		margin-top: rem(45);
-		display: inline-block;
+		@include media-breakpoint-up(md) {
+			margin-top: rem(45);
+			display: inline-block;
+		}
+		display: flex;
+		@include media-breakpoint-down(sm) {
+			justify-content: space-between;
+		}
 		padding-bottom: rem(10);
 		align-items: center;
 		border-bottom: 1px solid #ececec;
@@ -83,7 +92,36 @@
 	}
 
 	&__devicesRow {
-		@include roww(55px);
+		@include media-breakpoint-up(md) {
+			@include roww(55px);
+		}
+	}
+
+	&__gridRow {
+		padding-top: rem(20);
+		max-width: 240px;
+		@include media-breakpoint-down(xs) {
+			display: grid;
+			grid-template-columns: repeat(2,1fr);
+		}
+	}
+
+	&__quantlyItem {
+		@include media-breakpoint-down(xs) {
+			&:nth-child(1) {
+				grid-column-start: 2;
+				grid-column-end: 3;
+				// text-align: right;
+			}
+			&:nth-child(2) {
+				grid-column-start: 1;
+				grid-column-end: 1;
+			}
+
+
+
+
+		}
 	}
 
 	&__name {

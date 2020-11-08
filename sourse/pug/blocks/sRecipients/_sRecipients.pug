@@ -8,7 +8,7 @@ mixin sRecipients(data)
 				
 			+e.row.row
 				mixin item(i,t)
-					+e.col.col-auto
+					+e.col.col-4.col-md-3.col-lg-auto
 						+e.item
 							img.res-i(src=`img/svg/recipient-${i}.svg`, alt= t loading="lazy")
 							span= t

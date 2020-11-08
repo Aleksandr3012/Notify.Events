@@ -1,0 +1,26 @@
+mixin sProgram(data)
+	// start sProgram
+	+b.SECTION.sProgram.section#sProgram&attributes(attributes)
+		.container
+			.row
+				+e.col.col-lg-6
+					h3 Бонусные программы
+					p Notify.Events предоставляет возможность получить бесплатные бонусные сообщения за&nbsp;пользователей, приглашённых по&nbsp;реферальной программе, а&nbsp;так&nbsp;же за социальную активность.
+					p 
+						strong Узнайте полный список программ и&nbsp;их&nbsp;условия прямо&nbsp;сейчас!
+					+e.imgWrap
+						img.res-i.loading-lazy(src="img/svg/program-1.svg", alt="" loading="lazy")
+					div
+						+e.btn(href="#") Бонусная программа
+				+e.col.col-lg-6
+					h3 Специальное предложение для OpenSource-проектов
+					p Notify.Events предлагает особые условия для Open source (FLOSS/FOSS) проектов.
+					p Вы&nbsp;можете бесплатно пользоваться условиями тарифа&nbsp;&laquo;Команда&raquo; при соблюдении следующих условий:
+					+b.accardionBlock
+						+e.toggle--js Показать условия 
+							+icon('chevron-down')
+						+e.hiddenBlock
+							p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis ea eum soluta! Unde aut quod natus enim fugiat incidunt odit! Cupiditate nobis ut unde aut nemo adipisci, incidunt molestiae commodi.
+					+e.imgWrap
+						img.res-i.loading-lazy(src="img/svg/program-2.svg", alt="" loading="lazy")
+	// end sProgram

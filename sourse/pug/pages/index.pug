@@ -8,6 +8,9 @@ include ../blocks/sSources/_sSources.pug
 include ../blocks/sRecipients/_sRecipients.pug
 include ../blocks/sFilter/_sFilter.pug
 include ../blocks/sAdaptability/_sAdaptability.pug
+include ../blocks/sTariffs/_sTariffs.pug
+include ../blocks/sAdditionalServices/_sAdditionalServices.pug
+include ../blocks/sProgram/_sProgram.pug
 
 block variables
 	- let  mainPage= null
@@ -51,9 +54,13 @@ block pagecontent
 					img.res-i(src=`img/svg/desktop.svg`, alt="", loading="lazy")
 					+e.name Компьютер
 				.col-auto
-					+e.notAll Это не всё!
-					+e.quantly 30+
-					+e.ways способов получения сообщений
+					+e.gridRow
+						+e.quantlyItem
+							+e.notAll Это не всё!
+						+e.quantlyItem
+							+e.quantly 30+
+						+e.quantlyItem
+							+e.ways способов получения сообщений
 	+sAdvantage({
 		numb: 'Преимущество №4',
 		title: 'Выбирайте',
@@ -79,11 +86,9 @@ block pagecontent
 	+sRecipients()
 	+sFilter()
 	+sAdaptability()
-
-
-
-	+sForm()
-	+sContact()
+	+sTariffs()
+	+sAdditionalServices()
+	+sProgram()
 	+footer()
 
 

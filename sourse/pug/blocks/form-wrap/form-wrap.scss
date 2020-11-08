@@ -140,21 +140,27 @@
 
 
 
-// select.form-control {
-// 	background-image: url(../img/svg/chevron-up.svg);
-// 	background-repeat: no-repeat;
-// 	background-position: calc(100%  - 20px) 50%; // background-size: rem(18) ;
-// 	padding-right: rem(43px);
-// 	appearance: none !important;
+select.form-control {
+	border-radius: $border-radius-sm;
+	background-color: transparent;
+	background-image: url('../img/svg/chevron-down-secondary.svg');
+	background-repeat: no-repeat;
+	background-position: calc(100%  - 20px) 50%; // background-size: rem(18) ;
+	padding-right: rem(43px);
+	appearance: none !important;
+	border: 1px solid $secondary;
+	color: $secondary;
+	font-size: $small;
+	font-weight: 700;
 
-// 	&:not([size]):not([multiple]) {
-// 		height: $input-height;
-// 	}
+	&:not([size]):not([multiple]) {
+		// height: $input-height;
+	}
 
-// 	&:focus::-ms-value {
+	&:focus::-ms-value {
 
-// 	}
-// }
+	}
+}
 
 
 input[type='number'] {

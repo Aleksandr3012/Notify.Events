@@ -1,11 +1,12 @@
  
 	  
 .soc{
-	margin: 0 rem(-5px);
+	margin: 0 rem(-10px);
 	display: flex;
+	justify-content: center;
 	&__item{
 		text-decoration: none !important;
-		margin: 0 rem(5px);
+		margin: 0 rem(10px);
 		vertical-align: middle;
 		@include mt;
 		display: block;
@@ -13,10 +14,13 @@
 		 	// box-shadow: 0 0 33px 0px rgba(255, 83, 0, 0.16);
 			opacity: .6 ;
 		}
-		
+		color: #736786;
+		&:hover {
+			color: $primary;
+		}
 	}
 	.icon{
-	font-size: rem(30);
+		font-size: rem(26);
 	}
 	 
 

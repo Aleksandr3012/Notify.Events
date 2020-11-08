@@ -1,0 +1,39 @@
+mixin sAdditionalServices(data)
+	// start sAdditionalServices
+	+b.SECTION.sAdditionalServices.section#sAdditionalServices&attributes(attributes)
+		.container
+			+b.section-title
+				h4 Цены на дополнительные услуги:
+				
+			+e.block
+				.row.justify-content-between
+					mixin item(i,t)
+						.col-lg-auto&attributes(attributes)
+							+e.topLine
+								+icon(i)
+								span= t
+							+e.body
+								block
+					+item('country','Ваша страна:').sAdditionalServices__fitstItem
+						+input('Россия','select')
+					+item('sms','SMS')
+						+e.priceWrap
+							+e.sm Цена<sup>3</sup>
+							+e.price 2,90 ₽ <span> / sms<sup>3</sup></span> 
+					+item('microphone','Голосовые звонки')
+						+e.priceWrap
+							+e.sm Цена<sup>3</sup>
+							+e.price 15,08 ₽ <span> / вызов<sup>4</sup></span> 
+					+item('line','Line')
+						+e.priceWrap
+							+e.sm Цена<sup>3</sup>
+							+e.price 0,65 ₽ <span> / сообщение</span> 
+			+e.text
+				h5 Сноски и пояснения к тарифам:
+				ol
+					li Тарифицируются только входящие сообщения. Плата за&nbsp;исходящие сообщения (кроме подписчиков с&nbsp;дополнительной платой) не&nbsp;взимается
+					li Период тарификации&nbsp;&mdash; 30&nbsp;календарных дней.
+					li Цены могут отличаться в&nbsp;зависимости от&nbsp;страны плательщика и&nbsp;курсов валют.
+					li Стоимость отправки уведомления напрямую зависит от&nbsp;количества SMS-сообщений, необходимых для передачи всего текста уведомления.
+
+	// end sAdditionalServices

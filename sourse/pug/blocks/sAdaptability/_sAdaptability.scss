@@ -1,6 +1,60 @@
-
 // start .sAdaptability
 .sAdaptability {
+	padding-top: calc(var(--sPT) * 1.6);
+	padding-bottom: calc(var(--sPB) * 1.5);
+	&__col {
+		display: flex;
+		align-items: center;
+		@include media-breakpoint-up(sm) {
+			flex-direction: column;
+			justify-content: center;
+			text-align: center;
+		}
+		height: calc(100% - 30px);
+		margin-bottom: 30px;
+	}
+
+	.section-title {
+		padding-bottom: calc(var(--sTPB) * 4);
+
+		&__subtitle {
+			padding-bottom: rem(17);
+		}
+
+		h2 {
+			font-weight: bold;
+		}
+	}
+
+	&__imgWrap {
+		@include media-breakpoint-down(xs) {
+			margin-right: rem(25);
+			width: rem(78);
+		}
+		flex-shrink: 0;
+		position: relative;
+		@include media-breakpoint-up(sm) {
+			margin-bottom: rem(15);
+			height: 174px;
+			&::after {
+				content: '';
+				bottom: 0;
+				@include a-cent(x);
+				background-color: $primary;
+				height: 2px;
+				width: 30px;
+			}
+		}
+	}
+
+	p {
+		font-weight: bold;
+		line-height: 130%;
+		color: #3c3249;
+		max-width: rem(220);
+		margin-left: auto;
+		margin-right: auto;
+	}
 	
 
 	@include media-breakpoint-up(sm) {}

@@ -1,4 +1,50 @@
 mixin footer()
 	+b.FOOTER.footer.block-with-lazy
 		.container
-			h2 footer
+			.row.justify-content-between
+				.col-md
+					+e.logo.d-md-none(href="/")
+						img.res-i.loading-lazy(src="img/svg/logo.svg", alt="" loading="lazy")
+					ul
+						li: a(href="#") Как это работает
+						li: a(href="#") Источники
+						li: a(href="#") Получатели
+						li: a(href="#") Возможности
+						li: a(href="#") Тарифы
+						li: a(href="#") Контакты
+						li: a(href="#") Помощь
+						li: a(href="#") Блог
+						li: a(href="#") Релизы
+						li: a(href="#") Политика конфиденциальности
+						li: a(href="#") Условия использования
+				.col-lg-3.col-xl-2
+					+e.btn(href="#")
+						+icon('lock')
+						|Вход/Регистрация
+					+soc()
+					+e.lang.d-none.d-md-block
+						+e.sm Выбор языка:
+						+b.langBlock
+							+e.item.drop-accardion-js
+								+e.iconWrap
+									img.res-i(src="img/svg/rus-flag.svg", alt="")
+								+e.lang РУССКИЙ
+							+e.itemsHidden.drop-accardion-toggle-js
+								+e.item(href="#")
+									+e.iconWrap
+										img.res-i(src="img/svg/uk-flag.svg", alt="")
+									+e.lang EN
+								+e.item(href="#")
+									+e.iconWrap
+										img.res-i(src="img/svg/uk-flag.svg", alt="")
+									+e.lang FR
+				.col-md-3.order-md-first
+					+e.logo.d-none.d-md-block(href="/")
+						img.res-i.loading-lazy(src="img/svg/logo.svg", alt="" loading="lazy")
+					+e.requisites
+						+e.sm Реквизиты:
+						p ИП Матрозов Олег Евгеньевич
+						p ИНН: 526019498718
+						p ОГРИП: 319527500141311
+
+			+e.foot 2017 - 2020 © Notify.Events

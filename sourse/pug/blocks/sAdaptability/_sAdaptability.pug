@@ -2,8 +2,20 @@ mixin sAdaptability(data)
 	// start sAdaptability
 	+b.SECTION.sAdaptability.section#sAdaptability&attributes(attributes)
 		.container
-			+b.section-title.text-center
-				h2 sAdaptability
+			+b.section-title
+				+e.subtitle гибкая система
+				h2 Адаптивность
 				
-			.row
+			.row.justify-content-center
+				mixin item(i,t)
+					+e.col.col-sm-6.col-lg
+						+e.imgWrap
+							img.res-i.loading-lazy(src=`img/svg/adaptability-${i}.svg`, alt="", loading="lazy")
+						p!= t
+
+				+item('1',`Адаптивность под разные устройства`)
+				+item('2',`Возможность присылать&nbsp;картинки`)
+				+item('3',`Возможность прикреплять&nbsp;файлы`)
+				+item('4',`Поддержка форматированых сообщений (HTML)`)
+				+item('5',`Поддержка действий в&nbsp;чате`)
 	// end sAdaptability

@@ -1,0 +1,95 @@
+mixin sTariffs(data)
+	// start sTariffs
+	+b.SECTION.sTariffs.section#sTariffs&attributes(attributes)
+		+e.inner
+			.container
+				+b.section-title
+					+e.subtitle Ценообразование
+					h2 Тарифы
+					
+				+e.slider--js.swiper-container
+					.swiper-wrapper
+						+tariffSlide({
+							title: 'Базовый',
+							messages: '300',
+							overprice: '0,25 ₽'
+						})
+						+tariffSlide({
+							title: 'Индивидуальный',
+							messages: '1500',
+							overprice: '0,13 ₽',
+							price: '190 ₽'
+						})
+						+tariffSlide({
+							title: 'Команда',
+							messages: '8 000',
+							overprice: '0,11 ₽',
+							price: '900 ₽'
+						}).selectedTariff
+						+tariffSlide({
+							title: 'Организация',
+							messages: '60 000',
+							overprice: '0,08 ₽',
+							price: '5 000 ₽'
+						})
+						+tariffSlide({
+							title: 'Корпорация',
+							messages: '600 000',
+							overprice: '0,04 ₽',
+							price: '25 000 ₽'
+						})
+				+b.controll-panell.d-lg-none
+					+e.slide-count-nums
+						+e.current-slide.current-slide-js 01
+						+e.dash-symb /
+						+e.max-slides 05
+					+e.arrow-cont
+						+e.pr-nt-parnter-sl.prev-sl-js
+							+e.arrow-icon-cont
+								+icon('slider-left')
+						+e.pr-nt-parnter-sl.next-sl-js
+							+e.arrow-icon-cont
+								+icon('slider-right')
+	// end sTariffs
+
+mixin tariffSlide(data)
+	+b.tariffSlide.swiper-slide&attributes(attributes)
+		+e.title= data.title
+		ul
+			li
+				span Кол-во сообщений<sup>1</sup>:
+				+e.block
+					strong= data.messages
+					+e.sm &nbsp;/ месяц
+						sup 2
+
+			li
+				span Цена сверх тарифа:
+				+e.block
+					strong= data.overprice
+					+e.sm &nbsp;/ сообщение
+
+			li
+				span Каналов:
+				+e.notLimited Не ограничено
+
+			li
+				span Подписчиков:
+				+e.notLimited Не ограничено
+
+			li
+				span Поддержка:
+				+e.notLimited Комьюнити
+
+			li
+				span Цена<sup>3</sup>:
+				if data.price
+					+e.block
+						h5= data.price
+						+e.month &nbsp;/ месяц 
+							sup 2
+				else
+					+e.block
+						h5 БЕСПЛАТНО
+				+e.btn(href="#") Подключить пакет
+

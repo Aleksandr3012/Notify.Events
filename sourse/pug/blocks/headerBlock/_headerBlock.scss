@@ -1,10 +1,12 @@
 // start .headerBlock
 .headerBlock {
-	--sTPB: #{rem(20)};
+	--sTPB: #{rem(10)};
 	--sPB: #{rem(42)};
-	--sPT: #{rem(50)};
+	--sPT: #{rem(55)};
 	@include media-breakpoint-up(xl) {
 		--sPT: #{rem(100)};
+		--sTPB: #{rem(20)};
+
 	}
 	@include media-breakpoint-up(xxl) {
 		--sPT: #{rem(160)};
@@ -26,16 +28,21 @@
 			width: 20px;
 			margin-left: auto;
 			margin-right: auto;
+			margin-top: rem(47);
+
 		}
 
 		.icon {
-			font-size: rem(20);
+			font-size: 20px;
 		}
 
 		&::before {
 			content: '';
+			@include media-breakpoint-up(md) {
+				top: rem(66);
+			}
+			top: rem(65);
 			left: rem(-140);
-			top: rem(66);
 			position: absolute;
 			width: rem(300);
 			height: rem(50);
@@ -46,14 +53,24 @@
 	}
 
 	h1 {
-		line-height: 1;
+		@include media-breakpoint-up(md) {
+			line-height: 1;
+		}
 	}
 
-	h6 {
+	h5 {
 		max-width: rem(520);
 		line-height: 150%;
 		letter-spacing: rem(1);
 		margin-bottom: rem(37);
+	}
+
+	&__imgWrap {
+		@include media-breakpoint-down(sm) {
+			max-width: rem(220);
+			margin-left: auto;
+			margin-right: auto;
+		}
 	}
 
 	&__btn {
@@ -62,6 +79,11 @@
 		border-radius: $border-radius-sm;
 		@include media-breakpoint-down(xl) {
 			margin-bottom: rem(30);
+		}
+		@include media-breakpoint-down(sm) {
+			display: block;
+			width: 100%;
+			max-width: 280px;
 		}
 	}
 
@@ -80,10 +102,10 @@
 			width: 44px;
 			height: 44px;
 			border: 1px solid #fff;
-			left: rem(-12);
-			right: rem(-20);
-			top: rem(-9);
-			bottom: rem(-20);
+			left: -12px;
+			right: -20px;
+			top: -9px;
+			bottom: -20px;
 			border-radius: 50%;
 			animation: pulse 3s linear infinite;
 

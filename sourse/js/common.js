@@ -288,8 +288,8 @@ function eventHandler() {
 			loadPrevNext: true,
 		},
 		watchOverflow: true,
-		spaceBetween: 0,
-		loop: true,
+		spaceBetween: 10,
+		// loop: true,
 		navigation: {
 			nextEl: '.swiper-button-next',
 			prevEl: '.swiper-button-prev',
@@ -302,9 +302,15 @@ function eventHandler() {
 			// 	return '<span class="' + className + '">' + (index + 1) + '</span>';
 			// }
 		},
+
+		breakpoints: {
+			992 : {
+				spaceBetween: 15,
+			},
+		},
 	}
 
-	const swiper4 = new Swiper('.sBanners__slider--js', {
+	const swiper4 = new Swiper('.sTariffs__slider--js', {
 		// slidesPerView: 5,
 		...defaultSl,
 		slidesPerView: 'auto',
@@ -313,31 +319,39 @@ function eventHandler() {
 		touchRatio: 0.2,
 		slideToClickedSlide: true,
 		freeModeMomentum: true,
+		on: {
+			slideChange: function () {
+				if (!tarifSlider) return
+				let currentSlideTxt = document.querySelector('.current-slide-js');
+				if (!currentSlideTxt) return;
+
+				currentSlideTxt.innerHTML = addZero(tarifSlider.realIndex + 1);
+			},
+		}
 	});
 	// modal window
+	//prev, next
+	$('.sTariffs .next-sl-js').on('click', function () {
+		tarifSlider.slideNext();
+	});
+	$('.sTariffs .prev-sl-js').on('click', function () {
+		tarifSlider.slidePrev();
+	});
 
-	$('.drop-accardion-js').on('click', function(){
-		$(this).parent().toggleClass('active')
-		.find('.drop-accardion-toggle-js').toggleClass('active');
-	})
 
-	let partnersSlider =  new Swiper('.sFilter__slider--js', {
+	let filterSlider =  new Swiper('.sFilter__slider--js', {
+		spaceBetween: 10,
+		slidesPerView: 'auto',
 		breakpoints: {
-			320 : {
-				slidesPerView: 1,
-				spaceBetween: 10
-			},
 			576: {
-				slidesPerView: 2,
 				spaceBetween: 30
 			},
 			992 : {
-				slidesPerView: 'auto',
 				spaceBetween: 40,
 			},
 		},
 
-		loop: true,
+		loop: false,
 
 		//autoplay
 		//autoplay: {
@@ -351,22 +365,32 @@ function eventHandler() {
 
 		on: {
 			slideChange: function () {
-				if (!partnersSlider) return
+				if (!filterSlider) return
 				let currSlideTxt = document.querySelector('.current-slide-js');
 				if (!currSlideTxt) return;
 
-				currSlideTxt.innerHTML = addZero(partnersSlider.realIndex + 1);
+				currSlideTxt.innerHTML = addZero(filterSlider.realIndex + 1);
 			},
 		}
 	});
 
 	//prev, next
-	$('.next-sl-js').click(function () {
-		partnersSlider.slideNext();
+	$('.sFilter .next-sl-js').on('click', function () {
+		filterSlider.slideNext();
 	});
-	$('.prev-sl-js').click(function () {
-		partnersSlider.slidePrev();
+	$('.sFilter .prev-sl-js').on('click', function () {
+		filterSlider.slidePrev();
 	});
+	
+	$('.drop-accardion-js').on('click', function(){
+		$(this).parent().toggleClass('active')
+		.find('.drop-accardion-toggle-js').toggleClass('active');
+	})
+
+
+	$('.accardionBlock__toggle--js').on('click', function(){
+		$(this).parent().find('.accardionBlock__hiddenBlock').slideToggle();
+	})
 	
 };
 if (document.readyState !== 'loading') {
