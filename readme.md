@@ -1,1 +1,1 @@
-1. Отключил lazy плагин. Поставил  loading="lazy"
+1. <https://aleksandr3012.github.io/Notify.Events/public/>
