@@ -1,6 +1,6 @@
 // start .sAdvantage
 .sAdvantage {
-	
+	overflow: hidden;
 	&__imgWrap {
 		@include media-breakpoint-up(xl) {
 			margin-left: rem(-40);
@@ -98,7 +98,7 @@
 	}
 
 	&__gridRow {
-		padding-top: rem(20);
+		padding-top: rem(7);
 		max-width: 240px;
 		@include media-breakpoint-down(xs) {
 			display: grid;

@@ -1,6 +1,7 @@
 
 // start .sTariffs
 .sTariffs {
+	overflow: hidden;
 	padding-top: calc(var(--sPT) * 1.6);
 	padding-bottom: calc(var(--sPB) / 1.4);
 	position: relative;

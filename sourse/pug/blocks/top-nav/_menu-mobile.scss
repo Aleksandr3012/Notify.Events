@@ -90,7 +90,7 @@ $h: 1px;
 	top: 0;
 	left: 0;
 	// right: 0;
-	transform: translateX(-100vh);
+	transform: translateX(-100vw);
 	@include mt(.6);
 	will-change: transform;
 
