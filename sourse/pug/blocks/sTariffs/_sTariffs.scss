@@ -7,9 +7,13 @@
 	background-color: $purple;
 	&::before {
 		content: '';
-		width: 100%;
+		width: 110%;
+		left: -5%;
+		@include media-breakpoint-up(xl) {
+			width: 100%;
+			left: 0;
+		}
 		position: absolute;
-		left: 0;
 		top: 0;
 		height: rem(354);
 		background-image: url('../img/svg/tariff-bg.svg');

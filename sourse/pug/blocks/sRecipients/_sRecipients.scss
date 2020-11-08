@@ -110,6 +110,7 @@
 	&__btn {
 		@extend .btn;
 		@extend .btn-primary;
+		box-shadow: 0 33px 43px rgba(0, 0, 0, 0.14);
 		position: relative;
 		z-index: 2;
 		@include media-breakpoint-down(md) {

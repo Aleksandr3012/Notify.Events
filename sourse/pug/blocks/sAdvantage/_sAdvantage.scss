@@ -124,11 +124,6 @@
 		}
 	}
 
-	&__name {
-		margin-top: auto;
-		padding-top: rem(12);
-		font-size: $xsmall;
-	}
 
 	&__notAll {
 		font-size: $small;
@@ -153,7 +148,17 @@
 		text-align: center;
 		display: flex;
 		flex-direction: column;
+		height: 100%;
+		img {
+			margin-bottom: auto;
+			
+		}
+	}
 
+	&__name {
+		margin-top: auto;
+		padding-top: rem(12);
+		font-size: $xsmall;
 	}
 
 	@include media-breakpoint-up(sm) {}

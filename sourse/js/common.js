@@ -226,7 +226,7 @@ const JSCCommon = {
 	},
 	animateScroll() {
 		// листалка по стр
-		$(" .top-nav li a, .scroll-link, .headerBlock__scrollBlock").click(function () {
+		$(" .topLine li a, .scroll-link, .headerBlock__scrollBlock").click(function () {
 			const elementClick = $(this).attr("href");
 			const destination = $(elementClick).offset().top;
 
