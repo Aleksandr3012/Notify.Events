@@ -24,6 +24,46 @@ mixin mob-mnu()
 					+icon('lock')
 					|Вход/Регистрация
 	//  мобильное меню
+mixin mob-mnu-inner()
+	+b.toggle-menu-mobile--js.d-lg-none
+		span
+	+b.menu-mobile--js.d-lg-none
+		//- +b.toggle-menu-mobile--js
+		//- 	span
+		+e.inner--content
+			+e.block
+				mixin bl(t,pr)
+					+b.txtBlock
+						+e.sm= t
+						+e.pr= pr
+				+bl('Счет:','2000 ₽ / 0')
+				+bl('Ваш тариф:','Корпоративный')
+			+e.chanel(href="#")
+				+e.iconWrap
+					+icon('chanel')
+				+e.chanel-text Каналы
+				+e.chanel-num 7
+			+e.catalog(href="#")
+				+icon('catalog')
+				span Каталог
+			+e.help(href="#")
+				+icon('help')
+				span Помощь
+			+b.langBlock
+				+e.item.drop-accardion-js
+					+e.iconWrap
+						img.res-i(src="img/svg/rus-flag.svg", alt="")
+					+e.lang РУС
+				+e.itemsHidden.drop-accardion-toggle-js
+					+e.item(href="#")
+						+e.iconWrap
+							img.res-i(src="img/svg/uk-flag.svg", alt="")
+						+e.lang EN
+					+e.item(href="#")
+						+e.iconWrap
+							img.res-i(src="img/svg/uk-flag.svg", alt="")
+						+e.lang FR
+
 mixin top-nav() 
 	// start top-nav
 	+b.top-nav.block-with-lazy

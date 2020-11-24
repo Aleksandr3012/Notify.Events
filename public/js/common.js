@@ -259,7 +259,7 @@ function eventHandler() {
 
 	var x = window.location.host;
 	var screenName;
-	screenName = 'Mobile.jpg';
+	screenName = '02.jpg';
 
 	if (screenName && x === "localhost:3000") {
 		$(".footer").after("<div class=\"pixel-perfect\" style=\"background-image: url(screen/".concat(screenName, ");\"></div>"));
@@ -306,41 +306,45 @@ function eventHandler() {
 			spaceBetween: 15
 		}
 	}), _defaultSl);
-	var swiper4 = new Swiper('.sTariffs__slider--js', _objectSpread(_objectSpread({}, defaultSl), {}, {
-		slidesPerView: 'auto',
-		freeMode: true,
-		centeredSlides: true,
-		loopFillGroupWithBlank: true,
-		touchRatio: 0.2,
-		slideToClickedSlide: true,
-		freeModeMomentum: true,
-		// loop: true,
-		// breakpoints: {
-		// 	576: {
-		// 		spaceBetween: 30
-		// 	},
-		// 	992 : {
-		// 		spaceBetween: 40,
-		// 	},
-		// },
-		on: {
-			slideChange: function slideChange() {
-				if (!swiper4) return;
-				var currentSlideTxt = document.querySelector('.sTariffs .current-slide-js');
-				if (!currentSlideTxt) return;
-				currentSlideTxt.innerHTML = addZero(swiper4.realIndex + 1);
-			}
-		}
-	}));
-	swiper4.slideTo(2); // modal window
-	//prev, next
+	var tarifSlider = document.querySelector('.sTariffs__slider--js');
 
-	$('.sTariffs .next-sl-js').on('click', function () {
-		swiper4.slideNext();
-	});
-	$('.sTariffs .prev-sl-js').on('click', function () {
-		swiper4.slidePrev();
-	});
+	if (tarifSlider) {
+		var swiper4 = new Swiper(tarifSlider, _objectSpread(_objectSpread({}, defaultSl), {}, {
+			slidesPerView: 'auto',
+			freeMode: true,
+			centeredSlides: true,
+			loopFillGroupWithBlank: true,
+			touchRatio: 0.2,
+			slideToClickedSlide: true,
+			freeModeMomentum: true,
+			// loop: true,
+			// breakpoints: {
+			// 	576: {
+			// 		spaceBetween: 30
+			// 	},
+			// 	992 : {
+			// 		spaceBetween: 40,
+			// 	},
+			// },
+			on: {
+				slideChange: function slideChange() {
+					if (!swiper4) return;
+					var currentSlideTxt = tarifSlider.querySelector('.current-slide-js');
+					if (!currentSlideTxt) return;
+					currentSlideTxt.innerHTML = addZero(swiper4.realIndex + 1);
+				}
+			}
+		}));
+		swiper4.slideTo(2); // modal window
+		//prev, next
+
+		$('.sTariffs .next-sl-js').on('click', function () {
+			swiper4.slideNext();
+		});
+		$('.sTariffs .prev-sl-js').on('click', function () {
+			swiper4.slidePrev();
+		});
+	}
 
 	function addZero(num) {
 		num = Number(num);

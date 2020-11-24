@@ -35,4 +35,43 @@ mixin topLine()
 				.col-auto.d-lg-none
 					+mob-mnu()
 
+mixin topLine-inner()
+	+b.topLine--inner.section#topLine&attributes(attributes)
+		.container
+			.row.align-items-center.justify-content-between
+				.col-auto.d-md-flex.align-items-center
+					+e.logo(href="/")
+						img.res-i(src="img/svg/logo.svg", alt="")
+					+b.langBlock.d-none.d-md-block
+						+e.item.drop-accardion-js
+							+e.iconWrap
+								img.res-i(src="img/svg/rus-flag.svg", alt="")
+							+e.lang РУС
+						+e.itemsHidden.drop-accardion-toggle-js
+							+e.item(href="#")
+								+e.iconWrap
+									img.res-i(src="img/svg/uk-flag.svg", alt="")
+								+e.lang EN
+							+e.item(href="#")
+								+e.iconWrap
+									img.res-i(src="img/svg/uk-flag.svg", alt="")
+								+e.lang FR
+				//- .col-auto.d-none.d-md-block
+				.col.col-xl-auto.d-none.d-lg-block
+				+e.col.col-auto
+					mixin bl(t,pr)
+						+b.txtBlock.d-none.d-lg-block
+							+e.sm= t
+							+e.pr= pr
+					+bl('Счет:','2000 ₽ / 0')
+					+bl('Ваш тариф:','Корпоративный')
+					+e.person.drop-accardion-js
+						+e.imgWrap
+							img.res-i(src="img/@2x/andrew.jpg", alt="")
+						+e.name.d-none.d-sm-block Andrew M.
+						+e.itemsHidden.drop-accardion-toggle-js
+							ul
+								li: a(href="#") Профиль
+								li: a(href="#") Выход
+					+mob-mnu-inner(class="d-lg-none")
 	// end topLine

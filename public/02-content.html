@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>Notify.Events</title>
+		<meta name="description" content="о чем страница">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, shrink-to-fit=no">
+		<meta name="viewport" content="width=device-width, shrink-to-fit=no">
+		<link rel="shortcut icon" type="image/png" href="img/favicon/favicon.png"><meta name="format-detection" content="telephone=no">
+		<link rel="image_src" href="http://genrif.ru/assets/i/soc-logo.png">
+		<meta property="og:type" content="website">
+		<meta property="og:site_name" content="content">
+		<meta property="og:title" content="content">
+		<meta property="og:description" content="content">
+		<meta property="og:url" content="content">
+		<meta property="og:locale" content="ru_RU">
+		<meta property="og:image" content="path/to/image.jpg">
+		<meta property="og:image:width" content="968">
+		<meta property="og:image:height" content="504">
+		<!-- Custom Browsers Color-->
+		<meta name="theme-color" content="#3361d8">
+		<link rel="stylesheet" href="libs/swiper/css/swiper.min.css"/>
+		<link rel="stylesheet" href="js/easy-responsive-tabs.css"/>
+		<link rel="stylesheet" href="libs/@fancyapps/fancybox/jquery.fancybox.min.css"/>
+		<link rel="stylesheet" href="css/main.min.css"/>
+	</head>
+	<body> 
+		<!-- start header-->
+		<header class="header" id="header">
+			<div class="topLine topLine--inner section" id="topLine">
+				<div class="container">
+					<div class="row align-items-center justify-content-between">
+						<div class="col-auto d-md-flex align-items-center"><a class="topLine__logo" href="/"><img class="res-i" src="img/svg/logo.svg" alt=""/></a>
+							<div class="langBlock d-none d-md-block">
+								<div class="langBlock__item drop-accardion-js">
+									<div class="langBlock__iconWrap"><img class="res-i" src="img/svg/rus-flag.svg" alt=""/>
+									</div>
+									<div class="langBlock__lang">РУС
+									</div>
+								</div>
+								<div class="langBlock__itemsHidden drop-accardion-toggle-js"><a class="langBlock__item" href="#"><span class="langBlock__iconWrap"><img class="res-i" src="img/svg/uk-flag.svg" alt=""/></span><span class="langBlock__lang">EN</span></a><a class="langBlock__item" href="#"><span class="langBlock__iconWrap"><img class="res-i" src="img/svg/uk-flag.svg" alt=""/></span><span class="langBlock__lang">FR</span></a>
+								</div>
+							</div>
+						</div>
+						<div class="col col-xl-auto d-none d-lg-block"></div>
+						<div class="topLine__col col-auto">
+							<div class="txtBlock d-none d-lg-block">
+								<div class="txtBlock__sm">Счет:
+								</div>
+								<div class="txtBlock__pr">2000 ₽ / 0
+								</div>
+							</div>
+							<div class="txtBlock d-none d-lg-block">
+								<div class="txtBlock__sm">Ваш тариф:
+								</div>
+								<div class="txtBlock__pr">Корпоративный
+								</div>
+							</div>
+							<div class="topLine__person drop-accardion-js">
+								<div class="topLine__imgWrap"><img class="res-i" src="img/@2x/andrew.jpg" alt=""/>
+								</div>
+								<div class="topLine__name d-none d-sm-block">Andrew M.
+								</div>
+								<div class="topLine__itemsHidden drop-accardion-toggle-js">
+									<ul>
+										<li><a href="#">Профиль</a></li>
+										<li><a href="#">Выход</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="toggle-menu-mobile toggle-menu-mobile--js d-lg-none"><span></span>
+							</div>
+							<div class="menu-mobile menu-mobile--js d-lg-none">
+								<div class="menu-mobile__inner menu-mobile__inner--content">
+									<div class="menu-mobile__block">
+										<div class="txtBlock">
+											<div class="txtBlock__sm">Счет:
+											</div>
+											<div class="txtBlock__pr">2000 ₽ / 0
+											</div>
+										</div>
+										<div class="txtBlock">
+											<div class="txtBlock__sm">Ваш тариф:
+											</div>
+											<div class="txtBlock__pr">Корпоративный
+											</div>
+										</div>
+									</div><a class="menu-mobile__chanel" href="#"><span class="menu-mobile__iconWrap">
+									<svg class="icon icon-chanel ">
+										<use xlink:href="img/svg/sprite.svg#chanel"></use>
+									</svg></span><span class="menu-mobile__chanel-text">Каналы</span><span class="menu-mobile__chanel-num">7</span></a><a class="menu-mobile__catalog" href="#">
+									<svg class="icon icon-catalog ">
+										<use xlink:href="img/svg/sprite.svg#catalog"></use>
+									</svg><span>Каталог</span></a><a class="menu-mobile__help" href="#">
+									<svg class="icon icon-help ">
+										<use xlink:href="img/svg/sprite.svg#help"></use>
+									</svg><span>Помощь</span></a>
+									<div class="langBlock">
+										<div class="langBlock__item drop-accardion-js">
+											<div class="langBlock__iconWrap"><img class="res-i" src="img/svg/rus-flag.svg" alt=""/>
+											</div>
+											<div class="langBlock__lang">РУС
+											</div>
+										</div>
+										<div class="langBlock__itemsHidden drop-accardion-toggle-js"><a class="langBlock__item" href="#"><span class="langBlock__iconWrap"><img class="res-i" src="img/svg/uk-flag.svg" alt=""/></span><span class="langBlock__lang">EN</span></a><a class="langBlock__item" href="#"><span class="langBlock__iconWrap"><img class="res-i" src="img/svg/uk-flag.svg" alt=""/></span><span class="langBlock__lang">FR</span></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end topLine-->
+		</header>
+		<!-- end header-->
+		<!-- start sContent-->
+		<section class="sContent section" id="sContent">
+			<div class="sContent__line d-none d-lg-block">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-auto"><a class="sContent__chanel" href="#"><span class="sContent__iconWrap">
+							<svg class="icon icon-chanel ">
+								<use xlink:href="img/svg/sprite.svg#chanel"></use>
+							</svg></span><span class="sContent__chanel-text">Каналы</span><span class="sContent__chanel-num">7</span></a>
+						</div>
+						<div class="col-auto"><a class="sContent__catalog" href="#">
+							<svg class="icon icon-catalog ">
+								<use xlink:href="img/svg/sprite.svg#catalog"></use>
+							</svg><span>Каталог</span></a>
+						</div>
+						<div class="col-auto"><a class="sContent__help" href="#">
+							<svg class="icon icon-help ">
+								<use xlink:href="img/svg/sprite.svg#help"></use>
+							</svg><span>Помощь</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="sContent__line">
+				<div class="container">
+					<nav aria-label="breadcrumb">
+						<ol class="breadcrumb" itemscope="itemscope" itemtype="http://schema.org/BreadcrumbList">
+							<li class="breadcrumb-item" itemprop="itemListElement" itemscope="itemscope" itemtype="http://schema.org/ListItem"><a href="/" itemprop="item"><span itemprop="name">Главная</span>
+									<meta itemprop="position" content="1"/></a></li>
+							<li class="breadcrumb-item active" itemprop="itemListElement" itemscope="itemscope" itemtype="http://schema.org/ListItem"><a href="#" itemprop="item"><span itemprop="name">Пример типовой страницы</span>
+									<meta itemprop="position" content="2"/></a></li>
+						</ol>
+					</nav>
+				</div>
+			</div>
+			<div class="container">
+				<div class="sContent__mainContent">
+					<div class="section-title d-lg-none">
+						<div class="h1">Впервые используете сервис Notify.Events?</div>
+					</div>
+					<div class="row">
+						<div class="sContent__col col-lg order-lg-last">
+							<div class="linksBlock">
+								<ul>
+									<li><a href="#">Что Важно помнить?</a></li>
+									<li><a class="active" href="#">Необходимый софт для работы с сервисом</a></li>
+									<li><a href="#">Видеоруководство по установке загрузчика</a>
+										<ul class="linksBlock__subMnu">
+											<li><a href="#">Работа на сервере</a></li>
+											<li><a href="#">Работа на стороне клиента</a></li>
+										</ul>
+									</li>
+									<li><a href="#">PDF-инструкция по установке</a>
+										<ul class="linksBlock__subMnu">
+											<li><a href="#">Стартовый код для команды загрузки</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Таблица совместимости</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-lg-9">
+							<div class="section-title d-none d-lg-block">
+								<h1>Впервые используете сервис Notify.Events?</h1>
+							</div>
+							<div class="infoBlock">
+								<div class="infoBlock__iconInfo">
+									<svg class="icon icon-info ">
+										<use xlink:href="img/svg/sprite.svg#info"></use>
+									</svg>
+								</div>
+								<div class="infoBlock__text">
+									<h4>Важная информация!</h4>
+									<p>Идейные соображения высшего порядка, а&nbsp;также сложившаяся структура организации требуют от&nbsp;нас анализа позиций, занимаемых участниками в&nbsp;отношении поставленных задач. Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение нашей деятельности требуют от&nbsp;нас анализа системы обучения кадров, соответствует насущным потребностям.</p>
+								</div>
+							</div>
+							<div class="sContent__block">
+								<h2>Что Важно помнить?</h2>
+								<p>Идейные соображения высшего порядка, а&nbsp;также сложившаяся структура организации требуют от&nbsp;нас анализа позиций, занимаемых участниками в&nbsp;отношении поставленных задач. Повседневная практика показывает, что постоянное информационно-гандистское обеспечение нашей деятельности требуют от&nbsp;нас анализа <a href="#">системы обучения</a> кадров, соответствует насущным потребностям. Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности в&nbsp;значительной степени обуславливает создание соответствующий условий активизации. Таким образом постоянный количественный рост и&nbsp;сфера нашей активности требуют от&nbsp;нас анализа модели развития. Таким образом консультация с&nbsp;широким активом позволяет оценить значение форм развития.</p>
+								<p>Разнообразный и богатый опыт новая модель организационной деятельности способствует подготовки и реализации форм развития. Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации дальнейших направлений развития. Разнообразный и богатый опыт реализация намеченных плановых заданий влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач.</p>
+							</div>
+							<div class="sContent__picWrap">
+								<!-- picture-->
+								<picture> 
+									<source srcset="img/@2x/webp/content-1.webp" type="image/webp" media="(min-width:576px)"/>
+									<source srcset="img/@1x/webp/content-1.webp" type="image/webp"/>
+									<source srcset="img/@2x/content-1.jpg" type="image/jpg" media="(min-width:576px)"/>
+									<source srcset="img/@1x/content-1.jpg" type="image/jpg"/>
+									<noscript class="loading-lazy"><img src="img/@2x/content-1.jpg" alt=""/></noscript>
+								</picture>
+								<!-- /picture-->
+								<div class="sContent__picDescr">Процесс разработки плагина под сервис Notify.Events на&nbsp;локальном сервере.
+								</div>
+							</div>
+							<div class="sContent__block">
+								<h2>Необходимый софт для работы с сервисом </h2>
+								<p>Таким образом постоянное информационно-пропагандистское обеспечение нашей деятельности требуют от&nbsp;нас анализа соответствующий условий активизации. Равным образом консультация с&nbsp;широким активом представляет собой интересный эксперимент проверки систем массового участия.</p>
+							</div>
+							<div class="sContent__block">
+								<h3>Работа на сервере</h3>
+								<p>Идейные соображения высшего порядка, а&nbsp;также начало повседневной работы по&nbsp;формированию позиции в&nbsp;значительной степени обуславливает создание дальнейших направлений развития. Таким образом постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнять важные задания по&nbsp;разработке соответствующий условий активизации. Повседневная практика показывает, что дальнейшее развитие различных форм деятельности влечет за&nbsp;собой процесс внедрения и&nbsp;модернизации системы обучения кадров, соответствует насущным потребностям. Товарищи! рамки и&nbsp;место обучения кадров способствует подготовки и&nbsp;реализации систем массового участия. Не&nbsp;следует, однако забывать, что рамки и&nbsp;место обучения кадров представляет собой интересный эксперимент проверки дальнейших направлений развития.</p>
+								<p>Товарищи! рамки и&nbsp;место обучения кадров способствует подготовки и&nbsp;реализации систем массового участия. Не&nbsp;следует, однако забывать, что рамки и&nbsp;место обучения кадров представляет собой интересный эксперимент проверки дальнейших направлений развития.</p>
+							</div>
+							<div class="sContent__block pb-1">
+								<h3>Работа на стороне клиента</h3>
+								<p>Идейные соображения высшего порядка, а&nbsp;также начало повседневной работы по&nbsp;формированию позиции в&nbsp;значительной степени обуславливает создание дальнейших направлений развития. Таким образом постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнять важные задания по&nbsp;разработке соответствующий условий активизации. Повседневная практика показывает, что дальнейшее развитие различных форм деятельности влечет за&nbsp;собой процесс внедрения и&nbsp;модернизации <a href="#">системы обучения</a> кадров, соответствует насущным потребностям. Товарищи! рамки и&nbsp;место обучения кадров способствует подготовки и&nbsp;реализации систем массового участия. Не&nbsp;следует, однако забывать, что рамки и&nbsp;место обучения кадров представляет собой интересный эксперимент проверки дальнейших направлений развития.</p>
+							</div>
+							<div class="sContent__block">
+								<h4>Список необходимого и бесплатного софта: </h4>
+								<div class="sContent__listWrap">
+									<h5>Обязательный пакет</h5>
+									<ul>
+										<li>Sublime Text 3/Visual Studio</li>
+										<li>Adobe XD/Ilustrator/Photoshop</li>
+										<li>Базовая подписка на Github</li>
+										<li>Установленный локальный сервес на ПК</li>
+										<li>FTP-доступ к собственному хостингу</li>
+									</ul>
+									<h5>Необязательный пакет</h5>
+									<ul>
+										<li>Sublime Text 3/Visual Studio</li>
+										<li>Adobe XD/Ilustrator/Photoshop</li>
+										<li>Базовая подписка на Github</li>
+									</ul>
+								</div>
+							</div>
+							<div class="sContent__picWrap">
+								<!-- picture-->
+								<picture> 
+									<source srcset="img/@2x/webp/content-2.webp" type="image/webp" media="(min-width:576px)"/>
+									<source srcset="img/@1x/webp/content-2.webp" type="image/webp"/>
+									<source srcset="img/@2x/content-2.jpg" type="image/jpg" media="(min-width:576px)"/>
+									<source srcset="img/@1x/content-2.jpg" type="image/jpg"/>
+									<noscript class="loading-lazy"><img src="img/@2x/content-2.jpg" alt=""/></noscript>
+								</picture>
+								<!-- /picture-->
+								<div class="sContent__picDescr">Подключение дополнительных плагинов для кастомизации софта
+								</div>
+							</div>
+							<div class="sContent__block">
+								<h2>Видеоруководство по установке загрузчика</h2>
+								<p>Таким образом постоянное информационно-пропагандистское обеспечение нашей деятельности требуют от&nbsp;нас анализа соответствующий условий активизации. Равным образом консультация с&nbsp;широким активом представляет собой интересный эксперимент проверки систем массового участия. Задача организации, в&nbsp;особенности&nbsp;же рамки и&nbsp;место обучения кадров обеспечивает широкому кругу (специалистов) участие в&nbsp;формировании новых предложений. Идейные соображения высшего порядка, а&nbsp;также постоянное информационно-пропагандистское обеспечение нашей деятельности способствует подготовки и&nbsp;реализации форм развития.</p>
+								<p>Идейные соображения высшего порядка, а&nbsp;также начало повседневной работы по&nbsp;формированию позиции в&nbsp;значительной степени обуславливает создание дальнейших направлений развития. Таким образом постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнять важные задания по&nbsp;разработке соответствующий условий активизации. Повседневная практика показывает, что дальнейшее развитие различных форм деятельности влечет за&nbsp;собой процесс внедрения и&nbsp;модернизации системы обучения кадров, соответствует насущным потребностям.</p>
+								<h4>Видеоинструкция: &laquo;Загрузка установочного пакета&raquo;</h4><a class="videoBlock" href="https://www.youtube.com/watch?v=fV8d4Grhej8" data-fancybox="video">
+								<!-- picture-->
+								<picture> 
+									<source srcset="img/@2x/webp/content-3.webp" type="image/webp" media="(min-width:576px)"/>
+									<source srcset="img/@1x/webp/content-3.webp" type="image/webp"/>
+									<source srcset="img/@2x/content-3.jpg" type="image/jpg" media="(min-width:576px)"/>
+									<source srcset="img/@1x/content-3.jpg" type="image/jpg"/>
+									<noscript class="loading-lazy"><img src="img/@2x/content-3.jpg" alt=""/></noscript>
+								</picture>
+								<!-- /picture--><span class="videoBlock__block"><span class="videoBlock__iconWrap">
+								<svg class="icon icon-play ">
+									<use xlink:href="img/svg/sprite.svg#play"></use>
+								</svg></span><span class="videoBlock__play">Воспроизвести</span><span class="videoBlock__time">(4 мин 34 сек)</span></span></a>
+								<div class="sContent__block pb-2">
+									<h2>PDF-инструкция по установке</h2>
+									<p>Таким образом постоянное информационно-пропагандистское обеспечение нашей деятельности требуют от&nbsp;нас анализа соответствующий условий активизации. Равным образом консультация с&nbsp;широким активом представляет собой интересный эксперимент проверки систем массового участия. Задача организации, в&nbsp;особенности&nbsp;же рамки и&nbsp;место обучения кадров обеспечивает широкому кругу (специалистов) участие в&nbsp;формировании новых предложений. Идейные соображения высшего порядка, а&nbsp;также постоянное информационно-пропагандистское обеспечение нашей деятельности способствует подготовки и&nbsp;реализации форм развития.</p>
+								</div>
+								<div class="sContent__block">
+									<div class="instructions">
+										<div class="instructions__text">
+											<svg class="icon icon-attach ">
+												<use xlink:href="img/svg/sprite.svg#attach"></use>
+											</svg><span>Инструкция по установке плагина.pdf</span>
+										</div>
+										<div class="instructions__file">
+											<div class="instructions__size">Размер:<span>50 mb</span>
+											</div><a class="instructions__link" href="#">
+											<svg class="icon icon-pdf ">
+												<use xlink:href="img/svg/sprite.svg#pdf"></use>
+											</svg><span>Скачать файл</span></a>
+										</div>
+									</div>
+								</div>
+								<div class="sContent__block">
+									<h3>Стартовый код для команды загрузки</h3>
+									<p>Идейные соображения высшего порядка, а&nbsp;также начало повседневной работы по&nbsp;формированию позиции в&nbsp;значительной степени обуславливает создание дальнейших направлений развития.</p>
+									<pre><code>&lt;?
+$text = file_get_contents(&quot;http://site.com/index.php&quot;);
+$data = array();
+preg_match(&quot;/&lt;div class=&quot;popupmenu-item&quot;&gt;(.*)&lt;/div&gt;/Uis&quot;, $text, $out);
+print &quot;$out[1]&quot;;
+?&gt;</code></pre>
+								</div>
+								<div class="sContent__block">
+									<h4>В CSS вставьте следующий код:</h4>
+									<pre><code>pre {
+margin: 10px 0px 10px 10px;
+padding: 10px;
+color: #3f0309;
+font: 14px normal helvetica, sans-serif;
+border-left: 4px solid #d2bf94;
+white-space: pre-wrap; /* перенос длинных строк */
+word-wrap: break-word; /* перенос длинных слов в Internet Explorer 5.5+ */
+}</code></pre>
+								</div>
+								<div class="sContent__block">
+									<h2>Таблица совместимости систем с плагином</h2>
+									<p>Таким образом постоянное информационно-пропагандистское обеспечение нашей деятельности требуют от&nbsp;нас анализа соответствующий условий активизации. Равным образом консультация с&nbsp;широким активом представляет собой интересный эксперимент проверки систем массового участия.</p>
+									<div class="sContent__table">
+										<table>
+											<thead>
+												<tr>
+													<td>Операционная система</td>
+													<td>Параметр 1</td>
+													<td>Параметр 2</td>
+													<td>Параметр 3</td>
+													<td>Параметр 4</td>
+													<td>Итог</td>
+												</tr>
+											</thead>
+											<tbody>
+														<tr>
+															<td>Microsoft Windows 10</td>
+															<td> 
+																<div class="d-md-none">Параметр 1</div>Совместима
+															</td>
+															<td> 
+																<div class="d-md-none">Параметр 2</div>Несовместима
+															</td>
+															<td> 
+																<div class="d-md-none">Параметр 3</div>Совместима
+															</td>
+															<td> 
+																<div class="d-md-none">Параметр 4</div>Настраиваемая
+															</td>
+															<td>
+																<div class="d-md-none">Итог</div>
+																<div class="sContent__tdWrap"><img class="res-i" src="img/svg/table-check.svg" alt=""/><span>Готово</span>
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<td>Microsoft Windows 8</td>
+															<td> 
+																<div class="d-md-none">Параметр 1</div>Совместима
+															</td>
+															<td> 
+																<div class="d-md-none">Параметр 2</div>Несовместима
+															</td>
+															<td> 
+																<div class="d-md-none">Параметр 3</div>Совместима
+															</td>
+															<td> 
+																<div class="d-md-none">Параметр 4</div>Настраиваемая
+															</td>
+															<td>
+																<div class="d-md-none">Итог</div>
+																<div class="sContent__tdWrap"><img class="res-i" src="img/svg/table-check.svg" alt=""/><span>Готово</span>
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<td>Mac OS Catalina</td>
+															<td> 
+																<div class="d-md-none">Параметр 1</div>Совместима
+															</td>
+															<td> 
+																<div class="d-md-none">Параметр 2</div>Несовместима
+															</td>
+															<td> 
+																<div class="d-md-none">Параметр 3</div>Совместима
+															</td>
+															<td> 
+																<div class="d-md-none">Параметр 4</div>Настраиваемая
+															</td>
+															<td>
+																<div class="d-md-none">Итог</div>
+																<div class="sContent__tdWrap"><img class="res-i" src="img/svg/table-check.svg" alt=""/><span>Готово</span>
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<td>Mac OS Mojave</td>
+															<td> 
+																<div class="d-md-none">Параметр 1</div>Совместима
+															</td>
+															<td> 
+																<div class="d-md-none">Параметр 2</div>Несовместима
+															</td>
+															<td> 
+																<div class="d-md-none">Параметр 3</div>Совместима
+															</td>
+															<td> 
+																<div class="d-md-none">Параметр 4</div>Настраиваемая
+															</td>
+															<td>
+																<div class="d-md-none">Итог</div>
+																<div class="sContent__tdWrap"><img class="res-i" src="img/svg/table-check.svg" alt=""/><span>Готово</span>
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<td>Microsoft Windows 10</td>
+															<td> 
+																<div class="d-md-none">Параметр 1</div>Совместима
+															</td>
+															<td> 
+																<div class="d-md-none">Параметр 2</div>Несовместима
+															</td>
+															<td> 
+																<div class="d-md-none">Параметр 3</div>Совместима
+															</td>
+															<td> 
+																<div class="d-md-none">Параметр 4</div>Настраиваемая
+															</td>
+															<td>
+																<div class="d-md-none">Итог</div>
+																<div class="sContent__tdWrap"><img class="res-i" src="img/svg/table-check.svg" alt=""/><span>Готово</span>
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<td>Microsoft Windows 8</td>
+															<td> 
+																<div class="d-md-none">Параметр 1</div>Совместима
+															</td>
+															<td> 
+																<div class="d-md-none">Параметр 2</div>Несовместима
+															</td>
+															<td> 
+																<div class="d-md-none">Параметр 3</div>Совместима
+															</td>
+															<td> 
+																<div class="d-md-none">Параметр 4</div>Настраиваемая
+															</td>
+															<td>
+																<div class="d-md-none">Итог</div>
+																<div class="sContent__tdWrap"><img class="res-i" src="img/svg/remove.svg" alt=""/><span>Готово</span>
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<td>Mac OS Catalina</td>
+															<td> 
+																<div class="d-md-none">Параметр 1</div>Совместима
+															</td>
+															<td> 
+																<div class="d-md-none">Параметр 2</div>Несовместима
+															</td>
+															<td> 
+																<div class="d-md-none">Параметр 3</div>Совместима
+															</td>
+															<td> 
+																<div class="d-md-none">Параметр 4</div>Настраиваемая
+															</td>
+															<td>
+																<div class="d-md-none">Итог</div>
+																<div class="sContent__tdWrap"><img class="res-i" src="img/svg/remove.svg" alt=""/><span>Готово</span>
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<td>Mac OS Mojave</td>
+															<td> 
+																<div class="d-md-none">Параметр 1</div>Совместима
+															</td>
+															<td> 
+																<div class="d-md-none">Параметр 2</div>Несовместима
+															</td>
+															<td> 
+																<div class="d-md-none">Параметр 3</div>Совместима
+															</td>
+															<td> 
+																<div class="d-md-none">Параметр 4</div>Настраиваемая
+															</td>
+															<td>
+																<div class="d-md-none">Итог</div>
+																<div class="sContent__tdWrap"><img class="res-i" src="img/svg/table-check.svg" alt=""/><span>Готово</span>
+																</div>
+															</td>
+														</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- end sContent-->
+		<footer class="footer block-with-lazy footer-inner" id="footer">
+			<div class="container">
+				<div class="row justify-content-between">
+					<div class="col-md"><a class="footer__logo d-md-none" href="/"><img class="res-i loading-lazy" src="img/svg/logo.svg" alt="" loading="lazy"/></a>
+						<ul>
+							<li><a href="#">Как это работает</a></li>
+							<li><a href="#">Источники</a></li>
+							<li><a href="#">Получатели</a></li>
+							<li><a href="#">Возможности</a></li>
+							<li><a href="#">Тарифы</a></li>
+							<li><a href="#">Контакты</a></li>
+							<li><a href="#">Помощь</a></li>
+							<li><a href="#">Блог</a></li>
+							<li><a href="#">Релизы</a></li>
+							<li><a href="#">Политика конфиденциальности</a></li>
+							<li><a href="#">Условия использования</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3 col-xxl-2"><a class="footer__btn" href="#">
+						<svg class="icon icon-lock ">
+							<use xlink:href="img/svg/sprite.svg#lock"></use>
+						</svg>Вход/Регистрация</a>
+						<div class="soc"><a class="soc__item" href="#" target="_blank">
+							<svg class="icon icon-telegram ">
+								<use xlink:href="img/svg/sprite.svg#telegram"></use>
+							</svg></a><a class="soc__item" href="#" target="_blank">
+							<svg class="icon icon-git ">
+								<use xlink:href="img/svg/sprite.svg#git"></use>
+							</svg></a><a class="soc__item" href="#" target="_blank">
+							<svg class="icon icon-mail ">
+								<use xlink:href="img/svg/sprite.svg#mail"></use>
+							</svg></a><a class="soc__item" href="#" target="_blank">
+							<svg class="icon icon-fb ">
+								<use xlink:href="img/svg/sprite.svg#fb"></use>
+							</svg></a>
+						</div>
+						<div class="footer__lang d-none d-md-block">
+							<div class="footer__sm">Выбор языка:
+							</div>
+							<div class="langBlock">
+								<div class="langBlock__item drop-accardion-js">
+									<div class="langBlock__iconWrap"><img class="res-i" src="img/svg/rus-flag.svg" alt=""/>
+									</div>
+									<div class="langBlock__lang">РУССКИЙ
+									</div>
+								</div>
+								<div class="langBlock__itemsHidden drop-accardion-toggle-js"><a class="langBlock__item" href="#"><span class="langBlock__iconWrap"><img class="res-i" src="img/svg/uk-flag.svg" alt=""/></span><span class="langBlock__lang">EN</span></a><a class="langBlock__item" href="#"><span class="langBlock__iconWrap"><img class="res-i" src="img/svg/uk-flag.svg" alt=""/></span><span class="langBlock__lang">FR</span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 order-md-first"><a class="footer__logo d-none d-md-block" href="/"><img class="res-i loading-lazy" src="img/svg/logo.svg" alt="" loading="lazy"/></a>
+						<div class="footer__requisites">
+							<div class="footer__sm">Реквизиты:
+							</div>
+							<p>ИП Матрозов Олег Евгеньевич</p>
+							<p>ИНН: 526019498718</p>
+							<p>ОГРИП: 319527500141311</p>
+						</div>
+					</div>
+				</div>
+				<div class="footer__foot">2017 - 2020 © Notify.Events
+				</div>
+			</div>
+		</footer>
+		<!--  start modals-->
+		<div class="modal-win" id="modal-call" style="display: none">
+			<div class="form-wrap">
+				<form>
+					<input type="hidden" name="example-input-field"/>
+					<input class="order" type="hidden" name="order" value="Заявка  с сайта"/>
+					<input class="utm_source" type="hidden" name="utm_source"/>
+					<input class="utm_term" type="hidden" name="utm_term"/>
+					<input class="utm_medium" type="hidden" name="utm_medium"/>
+					<input class="utm_campaign" type="hidden" name="utm_campaign"/>
+					<div class="text-center">
+						<div class="form-wrap__title form-data h3 ttu">Обратный звонок
+						</div>
+						<p class="after-headline">Заполните заявку и&nbsp;мы&nbsp;с&nbsp;Вами свяжемся в&nbsp;течение 15&nbsp;минут</p>
+						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta at blanditiis error quis incidunt ratione. Expedita ullam repellendus possimus eos ex quidem quisquam quam voluptatum ipsa doloremque molestias accusamus rem deserunt tenetur incidunt exercitationem laboriosam consequuntur, repudiandae dolore odit earum voluptatibus autem amet! Eligendi omnis necessitatibus at accusamus excepturi, debitis magnam alias. Dolore voluptatum hic assumenda quo non facilis sed sint fugit ex quam. Natus eligendi sequi repellat earum doloremque vero consequatur repudiandae ipsam libero odit alias quia expedita magni fugit perspiciatis aperiam maxime illo, voluptatem omnis tenetur suscipit molestias beatae distinctio totam? Excepturi quaerat dolorum natus reprehenderit voluptas officiis totam recusandae harum autem ipsum laboriosam dolorem, tempore, maxime nam dignissimos aperiam cupiditate accusantium deleniti. Iusto harum facere blanditiis minima dolor assumenda error nisi soluta perferendis animi? Distinctio maxime, perspiciatis neque dignissimos reprehenderit obcaecati quo provident, dolores labore laborum adipisci at veniam reiciendis aliquam nemo minus cumque sequi quasi architecto aliquid magnam tempore expedita? Repellendus veniam est dicta nihil, aspernatur molestiae ducimus quibusdam voluptatibus saepe. Repudiandae itaque rem animi voluptas voluptate? Expedita numquam architecto totam quo quod quibusdam ut, rem earum, similique dolorum excepturi nobis quis, tempore et exercitationem repellendus! Ipsa, consequuntur praesentium quaerat excepturi voluptas, delectus maiores necessitatibus explicabo consequatur neque optio doloremque temporibus similique doloribus pariatur velit aliquam magni cum! Repellat mollitia quam saepe porro, culpa unde! Molestias laboriosam vitae nihil facere corporis cupiditate eos ea saepe dolorem, eaque laudantium quam distinctio, fugit placeat maxime enim dicta rem eligendi accusamus, eum id. Incidunt, illum quaerat ab modi iste quasi non laboriosam unde, atque fugit delectus cumque eligendi sapiente dolore autem omnis alias, adipisci dicta illo corrupti optio? Esse error numquam fugit itaque ipsam fugiat nostrum repudiandae recusandae, nobis repellat aperiam officiis labore possimus neque velit, a obcaecati illum quasi suscipit veritatis! Ea earum obcaecati impedit possimus adipisci vitae animi commodi consequatur omnis amet? Quod sed doloremque id nesciunt iure recusandae iste voluptatibus unde eligendi porro nulla architecto voluptates quasi temporibus, fugit asperiores quis! Facere non, illo quisquam cumque voluptate earum voluptatem corporis eum cum commodi omnis autem sequi nisi sit iure aperiam iusto dolor harum? Ex eligendi vero reiciendis culpa ipsa suscipit debitis, quam earum maxime. Nemo officia quasi consequuntur velit rem culpa ipsa quas earum excepturi amet fuga eum consequatur, repellendus commodi facere maxime. Magni voluptas consequatur facere dolores ut culpa, expedita fugit? Quae placeat asperiores est, fuga eligendi eius similique necessitatibus explicabo? Eveniet corporis tempora reiciendis, dolore ipsam quos aut ea alias amet nihil? Excepturi maiores mollitia inventore voluptate est ullam reprehenderit itaque iure quasi non molestias, vel veniam alias! Obcaecati laudantium ex incidunt autem ipsam a suscipit, in dolorem error deserunt minima laborum nulla facere officia sunt. Aliquid repellat rem sunt reprehenderit. Fugit perferendis officiis labore nesciunt pariatur optio minima aperiam et similique maxime odio laudantium eligendi deleniti culpa exercitationem impedit, fugiat magni vero temporibus eos obcaecati esse possimus asperiores dolores! Quod iure eius minus adipisci? Architecto sapiente corrupti error! Magni ea tempore laboriosam minus totam facilis iure voluptates nostrum officiis dignissimos nihil necessitatibus quam in, commodi molestiae expedita facere asperiores ad! Corporis delectus magnam, vel aspernatur rem laboriosam autem soluta aliquam iure impedit? Deserunt ad nam excepturi, quibusdam qui nisi necessitatibus, voluptatibus deleniti quo cumque ipsam cum repudiandae impedit in a laborum dignissimos ratione labore vitae officia quaerat magnam. Saepe ullam omnis harum reprehenderit beatae pariatur est? Animi dolores necessitatibus corrupti velit architecto obcaecati doloremque vero sapiente quaerat praesentium? Veniam illum iusto ea sunt deserunt, omnis consequatur est adipisci aliquid magnam quibusdam animi debitis magni excepturi accusamus vel facilis ipsa blanditiis expedita cumque fugiat! Aspernatur voluptatum quos corrupti blanditiis? Sapiente pariatur sunt culpa nesciunt consequatur eaque veritatis laborum possimus, saepe at nam amet exercitationem assumenda temporibus illo aliquid asperiores quae impedit beatae voluptatem? Vitae, totam quos odio nobis perferendis unde! Voluptates voluptatum, sint iure aliquid quis quod voluptatem saepe et similique, repellendus dolorum. Sed vel illo quisquam cum aut, ullam impedit quaerat a odit alias fugit repudiandae. Consequuntur voluptas explicabo eligendi, beatae esse nihil laborum illo rerum ab dolorum nemo iste est doloremque magnam. Repellendus in voluptates cumque ullam, cum odio quam deserunt optio doloremque modi nobis itaque cupiditate ea, neque exercitationem laborum, obcaecati mollitia earum debitis accusamus nisi dolorem autem libero dicta! Atque ad doloribus distinctio cumque nobis labore placeat? Necessitatibus, accusamus deleniti numquam asperiores distinctio tempora consectetur minus veritatis cum repellat architecto voluptatibus minima omnis aliquam fugit maiores eos veniam consequatur, rerum ex illo facere? Suscipit distinctio qui quae asperiores voluptates nobis unde, nisi soluta natus aspernatur tempore libero, nam iure? Modi, explicabo iusto tenetur placeat praesentium, sunt voluptatum soluta reiciendis quam atque hic dolorum in, esse consequuntur voluptate animi doloremque saepe expedita voluptates? Consectetur sint assumenda quaerat deleniti. Exercitationem, quas beatae. Ut ipsam eum nisi fugiat numquam saepe tempore dolorem necessitatibus consequatur, voluptatem eligendi magni laborum nostrum sed accusamus ducimus laudantium minus animi. Totam expedita vero voluptas libero ipsa! Facilis ullam vel libero aliquam sit itaque quasi delectus a rerum laborum, possimus, eos inventore nulla, excepturi exercitationem aliquid unde porro. Odio nulla labore repellat exercitationem cupiditate voluptates, obcaecati asperiores eligendi delectus commodi deserunt provident sit nam praesentium culpa cum amet explicabo, nisi dolores? Recusandae provident veritatis porro corporis voluptatem assumenda necessitatibus at. Sint quam in facere nihil hic cupiditate porro sapiente nisi, et ratione placeat commodi unde excepturi error repellat earum perspiciatis quisquam amet tempora. Expedita, ipsum? Molestias mollitia voluptatum sapiente inventore, perspiciatis ab laudantium, voluptatibus amet aliquid laborum autem? Adipisci aliquid voluptatum numquam quas quia ullam error sed illo, sit minima, consectetur temporibus unde? Rerum minima necessitatibus est expedita assumenda nesciunt, modi ea fugiat consectetur ad corporis velit ducimus quia aut cumque iusto voluptatibus et perferendis ipsum! Excepturi perferendis veritatis cumque quo, quod facere facilis impedit magnam numquam repellat ad tempora! Pariatur distinctio laborum, quaerat dolorem nostrum totam animi. Ipsa distinctio consectetur explicabo culpa, esse reprehenderit eveniet obcaecati, repudiandae dolorum vero expedita modi exercitationem iure aut provident sit cum adipisci consequatur id delectus voluptatum fuga ducimus natus. Cum, aperiam impedit error illo hic similique quo iure omnis ullam sapiente modi.</p>
+					</div>
+					<div class="form-wrap__input-wrap form-group"><input class="form-wrap__input form-control" type="text" placeholder="Ваше Имя" name="text" required="required"/> 
+					</div>
+					<!-- +e.input-wrap-->
+					<button class="form-wrap__btn btn" type="submit"> 
+					</button>
+					<div class="form-wrap__polite">
+						<label class="custom-input"><input class="custom-input__input" type="checkbox" name="checkbox" checked="checked"/><span class="custom-input__lab"></span><small class="custom-input__text text-secondary">Согласен на обработку и хранение моих персональных данных в соответствии с условиями</small>
+						</label>
+					</div>
+				</form>
+			</div>
+		</div>
+		<!-- #modal-call-->
+		<!-- end modals-->
+		<script src="libs/loading-attribute-polyfill/loading-attribute-polyfill.min.js"></script>
+		<script src="libs/jquery/jquery.min.js"></script>
+		<!-- modal libs-->
+		<script src="libs/@fancyapps/fancybox/jquery.fancybox.min.js"></script>
+		<!-- modal libs-->
+		<!-- slider libs-->
+		<script src="js/easy-responsive-tabs.js"></script>
+		<script src="libs/swiper/js/swiper.min.js"></script>
+		<!-- /slider libs-->
+		<script src="libs/inputmask/inputmask.min.js"></script>
+		<script src="js/common.js"></script>
+	</body>
+</html>
