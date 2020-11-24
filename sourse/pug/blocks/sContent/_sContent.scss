@@ -191,6 +191,7 @@
 	&__picDescr {
 		color: #827E88;
 		line-height: 120%;
+		margin-bottom: rem(17);
 	}
 
 	&__listWrap {
@@ -254,7 +255,7 @@
 			}
 
 			td {
-				@include media-breakpoint-only(md) {
+				@include media-breakpoint-only(lg) {
 					padding: rem(19) rem(10) rem(16);
 				}
 				padding: rem(19) rem(25) rem(16);
@@ -306,7 +307,7 @@
 		}
 
 		td {
-			@include media-breakpoint-only(md) {
+			@include media-breakpoint-only(lg) {
 				padding: rem(16) rem(10) rem(16);
 			}
 			padding: rem(16) rem(25) rem(16);
@@ -476,11 +477,16 @@
 }
 
 .linksBlock{
-	margin-bottom: rem(30);
+	@include media-breakpoint-down(md) {
+		margin-bottom: rem(30);
+	}
 	border: 2px solid #F8F5FD;
 	border-radius: 2px;
 	overflow: hidden;
 	padding: 30px 10px 10px 27px;
+	position: sticky;
+	right: 0;
+	top: 10px;
 
 	ul {
 		margin-bottom: 0;
@@ -526,12 +532,19 @@
 
 	&__subMnu {
 		padding-left: rem(10);
-
 		
 		a {
 			font-size: $small;
 			margin-bottom: rem(18);
+			&.active  {
+				&::before {
+					right: calc(100% + 33px) !important;
+				}
+		
+
+			}
 		}
+
 	}
 
 }
